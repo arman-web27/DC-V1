@@ -1,0 +1,4063 @@
+<!doctype html>
+<html lang="hi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,minimum-scale=1"
+    />
+    <meta name="theme-color" content="#F5FBF9" />
+    <title>DentalCare Capsules — बेहतर स्वास्थ्य, बेहतर कल</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Halant:wght@400;600;700&family=Hind:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css"
+    />
+    <style>
+      :root {
+        --blue: #20b89a;
+        --navy: #123b46;
+        --ink: #123b46;
+        --muted: #123b46;
+        --paper: #f5fbf9;
+        --cream: #f5fbf9;
+        --cream-deep: #eef8f5;
+        --line: #cceae2;
+        --tint: #eaf8f5;
+        --w: 450px;
+        --shadow: 0 8px 25px rgba(18, 59, 70, 0.08);
+      }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 20px;
+      }
+      body {
+        font-family: Hind, sans-serif;
+        background: #dcf3ec;
+        color: var(--ink);
+        display: flex;
+        justify-content: center;
+      }
+      button,
+      input {
+        font: inherit;
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+      button,
+      a,
+      input {
+        -webkit-tap-highlight-color: transparent;
+      }
+      button {
+        cursor: pointer;
+      }
+      button:focus-visible,
+      a:focus-visible {
+        outline: 3px solid #72d2bd;
+        outline-offset: 4px;
+      }
+      .page {
+        width: 100%;
+        max-width: var(--w);
+        background: #f5fbf9;
+        min-height: 100vh;
+        padding-bottom: 90px;
+        border-inline: 1px solid var(--line);
+        box-shadow: 0 0 60px rgba(18, 59, 70, 0.08);
+        overflow: hidden;
+      }
+      h1,
+      h2,
+      h3 {
+        font-family: Halant, serif;
+        line-height: 1.35;
+      }
+      h2 {
+        font-size: 24px;
+      }
+      h3 {
+        font-size: 20px;
+      }
+      p {
+        font-size: 16px;
+        line-height: 1.7;
+        color: var(--muted);
+      }
+      section {
+        padding: 32px 20px;
+        border-bottom: 1px solid var(--line);
+      }
+      section > p + p {
+        margin-top: 13px;
+      }
+      .topbar {
+        height: 74px;
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid var(--line);
+      }
+      .brand {
+        font-size: 26px;
+        font-weight: 700;
+        color: var(--navy);
+        line-height: 1.1;
+      }
+      .brand i {
+        font-size: 19px;
+        color: var(--blue);
+      }
+      .brand small {
+        display: block;
+        font:
+          600 9px/1.8 Hind,
+          sans-serif;
+        letter-spacing: 2px;
+        margin-top: 5px;
+      }
+      .header-cta {
+        color: var(--blue);
+        border: 1px solid var(--line);
+        border-radius: 30px;
+        padding: 8px 13px;
+        font-size: 13px;
+        font-weight: 600;
+      }
+      .kicker {
+        font:
+          700 18px/1.5 Hind,
+          sans-serif;
+        letter-spacing: 2px;
+        color: var(--blue);
+        margin-bottom: 10px;
+      }
+      .section-head {
+        text-align: center;
+        margin-bottom: 24px;
+      }
+      .section-head h2 {
+        max-width: 370px;
+        margin: auto;
+      }
+      .banner {
+        padding-top: 36px;
+        text-align: center;
+        min-height: 800px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .banner h1 {
+        font-size: 38px;
+        line-height: 1.35;
+        margin: 4px 0 16px;
+      }
+      .banner h1 span {
+        color: var(--blue);
+      }
+      .banner p {
+        font-size: 15px;
+      }
+      .cta,
+      .submit {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 18px;
+        background: var(--blue);
+        color: #fff;
+        border: 0;
+        border-radius: 12px;
+        padding: 15px 20px;
+        font-size: 16px;
+        font-weight: 600;
+        box-shadow: 0 7px 18px rgba(32, 184, 154, 0.25);
+        margin-top: 22px;
+        width: 100%;
+        transition: background 0.2s;
+      }
+      .cta:hover,
+      .submit:hover,
+      .sticky a:hover {
+        background: var(--navy);
+      }
+      .number {
+        display: grid;
+        place-items: center;
+        width: 49px;
+        height: 49px;
+        border-radius: 50%;
+        background: #f5fbf9;
+        border: 1px solid #cceae2;
+        color: var(--blue);
+        font-weight: 700;
+        position: relative;
+      }
+      .product-panel {
+        padding: 18px;
+        border: 1px solid var(--line);
+        border-radius: 22px;
+        box-shadow: var(--shadow);
+      }
+      .product-panel > h3 {
+        margin: 20px 0 15px;
+      }
+      .cards {
+        display: grid;
+        gap: 14px;
+      }
+      .card {
+        border: 1px solid var(--line);
+        padding: 20px;
+        border-radius: 16px;
+        background: #f5fbf9;
+        box-shadow: var(--shadow);
+      }
+      .card h3 {
+        color: var(--navy);
+        margin-bottom: 8px;
+      }
+      .card-icon {
+        color: var(--blue);
+        font-size: 34px;
+        margin: 4px 0 20px;
+      }
+      .guidance .card {
+        min-height: 190px;
+      }
+      .how-flow {
+        display: grid;
+        gap: 24px;
+      }
+      .how-step {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) 26px minmax(0, 1fr);
+        align-items: center;
+        gap: 10px;
+        min-height: 190px;
+      }
+      .how-symbol {
+        height: 160px;
+        border: 1px solid var(--line);
+        border-radius: 20px;
+        display: grid;
+        place-items: center;
+        color: var(--blue);
+        font-size: 50px;
+        background: var(--tint);
+      }
+      .how-step:nth-child(even) .how-symbol {
+        grid-column: 3;
+        grid-row: 1;
+      }
+      .how-step:nth-child(even) .how-node {
+        grid-column: 2;
+        grid-row: 1;
+      }
+      .how-step:nth-child(even) > div:last-child {
+        grid-column: 1;
+        grid-row: 1;
+      }
+      .how-step h3 {
+        font:
+          600 18px/1.4 Hind,
+          sans-serif;
+        color: var(--navy);
+        margin-bottom: 8px;
+      }
+      .how-step p {
+        font-size: 14px;
+        line-height: 1.6;
+      }
+      .herbs {
+        display: grid;
+        gap: 18px;
+      }
+      .herb {
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        overflow: hidden;
+        box-shadow: var(--shadow);
+      }
+      .herb-visual {
+        height: 185px;
+        position: relative;
+        display: grid;
+        place-items: center;
+        background: radial-gradient(circle, #eaf8f5, white);
+        color: var(--blue);
+      }
+      .herb-visual > i {
+        font-size: 78px;
+      }
+      .herb-visual > span {
+        position: absolute;
+        top: 17px;
+        left: 18px;
+        font-size: 10px;
+        letter-spacing: 2px;
+      }
+      .herb:nth-child(even) .herb-visual > i {
+        transform: rotate(-20deg);
+      }
+      .herb-content {
+        padding: 18px;
+        text-align: center;
+        border-top: 1px solid var(--line);
+      }
+      .herb-content h3 {
+        color: var(--navy);
+        font-size: 24px;
+        margin-bottom: 8px;
+      }
+      .trust-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+      }
+      .trust-card {
+        border: 1px solid var(--line);
+        border-radius: 20px;
+        padding: 24px 10px;
+        text-align: center;
+      }
+      .trust-card > i {
+        font-size: 35px;
+        color: var(--blue);
+        margin-bottom: 18px;
+      }
+      .trust-card h3 {
+        font-size: 19px;
+        margin-bottom: 6px;
+      }
+      .trust-card p {
+        font-size: 13px;
+      }
+      #order-form > p {
+        text-align: center;
+        margin-top: -12px;
+        margin-bottom: 22px;
+      }
+      .form-card {
+        border: 1px solid #cceae2;
+        padding: 24px 18px;
+        border-radius: 20px;
+        box-shadow: var(--shadow);
+      }
+      .field {
+        margin-bottom: 17px;
+      }
+      .field label {
+        display: block;
+        font-weight: 600;
+        font-size: 15px;
+        margin-bottom: 7px;
+      }
+      .field input {
+        width: 100%;
+        height: 50px;
+        border: 1px solid #cceae2;
+        border-radius: 10px;
+        padding: 0 12px;
+        background: #f5fbf9;
+        color: var(--ink);
+        min-width: 0;
+      }
+      .field input:focus {
+        outline: 3px solid rgba(32, 184, 154, 0.2);
+        border-color: var(--blue);
+      }
+      .err {
+        display: none;
+        font-size: 12px;
+        color: #d32f2f;
+        margin-top: 5px;
+      }
+      .err.show {
+        display: block;
+      }
+      .secure {
+        font-size: 12px;
+        line-height: 1.8;
+        text-align: center;
+        color: var(--muted);
+        margin-top: 15px;
+      }
+      .order-status {
+        font-size: 14px;
+        color: var(--navy);
+        margin-top: 10px;
+      }
+      .order-status:empty {
+        display: none;
+      }
+      .benefits-title {
+        text-align: center;
+        margin-top: 24px;
+        font-size: 18px;
+      }
+      .stories {
+        display: grid;
+        gap: 16px;
+      }
+      .story {
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        padding: 20px;
+        box-shadow: var(--shadow);
+      }
+      .story-head {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 16px;
+      }
+      .story h3 {
+        font:
+          600 17px/1.5 Hind,
+          sans-serif;
+      }
+      .faq-list {
+        display: grid;
+        gap: 10px;
+      }
+      .faq {
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        overflow: hidden;
+      }
+      .faq button {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        padding: 16px;
+        background: #f5fbf9;
+        border: 0;
+        text-align: left;
+        color: var(--ink);
+        font-weight: 600;
+        font-size: 16px;
+      }
+      .faq button span {
+        color: var(--blue);
+      }
+      .answer {
+        display: none;
+        padding: 0 16px 17px;
+        color: var(--muted);
+        font-size: 15px;
+        line-height: 1.7;
+      }
+      .faq.open .answer {
+        display: block;
+      }
+      .faq.open {
+        border-color: #cceae2;
+      }
+      .disclaimer h2 {
+        font-size: 18px;
+        margin-bottom: 13px;
+        color: var(--navy);
+      }
+      .disclaimer p {
+        font-size: 12px;
+        line-height: 1.7;
+      }
+      .disclaimer p + p {
+        margin-top: 10px;
+      }
+      footer {
+        padding: 30px 20px;
+        text-align: center;
+      }
+      footer p {
+        font-size: 12px;
+      }
+      .policy-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px 14px;
+        margin: 23px 0;
+      }
+      .policy-links button {
+        border: 0;
+        background: none;
+        color: var(--blue);
+        font-size: 12px;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+      }
+      .sticky {
+        position: fixed;
+        bottom: max(10px, env(safe-area-inset-bottom));
+        left: 50%;
+        transform: translate(-50%, calc(100% + 50px));
+        max-width: calc(var(--w) - 20px);
+        width: calc(100% - 20px);
+        padding: 10px 10px 10px 18px;
+        background: #fffffff5;
+        backdrop-filter: blur(14px);
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        box-shadow: 0 6px 28px rgba(18, 59, 70, 0.15);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        z-index: 80;
+        visibility: hidden;
+        transition:
+          transform 0.25s,
+          visibility 0.25s;
+      }
+      .sticky.show {
+        transform: translate(-50%, 0);
+        visibility: visible;
+      }
+      .sticky strong {
+        color: var(--navy);
+        font-size: 16px;
+        line-height: 1.4;
+      }
+      .sticky small {
+        display: block;
+        font-size: 12px;
+        line-height: 1.5;
+        color: var(--muted);
+      }
+      .sticky a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 48px;
+        flex-shrink: 0;
+        background: var(--blue);
+        color: white;
+        border-radius: 999px;
+        padding: 12px 22px;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 1.5;
+        box-shadow: 0 3px 10px rgba(32, 184, 154, 0.25);
+      }
+      @media (max-width: 360px) {
+        .sticky {
+          gap: 8px;
+          padding-left: 14px;
+        }
+        .sticky strong {
+          font-size: 14px;
+        }
+        .sticky a {
+          padding-inline: 16px;
+          font-size: 15px;
+        }
+      }
+      .loading {
+        position: fixed;
+        inset: 0;
+        background: rgba(18, 59, 70, 0.6);
+        z-index: 300;
+        display: none;
+        align-items: center;
+        justify-content: center;
+      }
+      .loading.show {
+        display: flex;
+      }
+      .loading-box {
+        padding: 25px;
+        background: #f5fbf9;
+        border-radius: 16px;
+      }
+      .spinner {
+        width: 35px;
+        height: 35px;
+        border: 3px solid var(--line);
+        border-top-color: var(--blue);
+        border-radius: 50%;
+        margin: 0 auto 10px;
+        animation: spin 1s linear infinite;
+      }
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      .pp-overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(18, 59, 70, 0.65);
+        z-index: 999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px;
+        visibility: hidden;
+        opacity: 0;
+        pointer-events: none;
+      }
+      .pp-overlay.show {
+        visibility: visible;
+        opacity: 1;
+        pointer-events: auto;
+      }
+      .pp-modal {
+        width: min(420px, 100%);
+        max-height: 75dvh;
+        overflow-y: auto;
+        background: #f5fbf9;
+        padding: 22px;
+        border-radius: 18px;
+        overscroll-behavior: contain;
+      }
+      .pp-close {
+        float: right;
+        position: sticky;
+        top: 0;
+        border: 0;
+        border-radius: 50%;
+        width: 32px;
+        height: 32px;
+        background: var(--tint);
+        color: var(--blue);
+        font-size: 22px;
+      }
+      .pp-mtitle {
+        font-size: 22px;
+        color: var(--navy);
+        margin: 0 35px 15px 0;
+      }
+      .pp-mtitle i {
+        margin-right: 8px;
+      }
+      .pp-mbadge {
+        font-size: 12px;
+        color: var(--blue);
+        margin-bottom: 12px;
+      }
+      .pp-modal p,
+      .pp-modal li {
+        font-size: 14px;
+        line-height: 1.7;
+        color: var(--muted);
+      }
+      .pp-modal ul {
+        padding-left: 20px;
+        margin: 13px 0;
+      }
+      .pp-mhl {
+        padding: 14px;
+        background: var(--tint);
+        border-left: 3px solid var(--blue);
+        font-size: 14px;
+        margin: 15px 0;
+      }
+      .pp-cgrid {
+        display: grid;
+        gap: 12px;
+      }
+      .pp-citem {
+        font-size: 14px;
+        padding: 12px;
+        border: 1px solid var(--line);
+      }
+      @media (max-width: 360px) {
+        section {
+          padding: 28px 15px;
+        }
+        .banner h1 {
+          font-size: 33px;
+        }
+        .topbar {
+          padding: 0 15px;
+        }
+        .brand {
+          font-size: 23px;
+        }
+        .number {
+          width: 41px;
+          height: 41px;
+        }
+        .how-step {
+          gap: 7px;
+        }
+        .how-step h3 {
+          font-size: 16px;
+        }
+        .how-symbol {
+          font-size: 40px;
+          height: 140px;
+        }
+        .sticky a {
+          padding: 12px;
+        }
+        .trust-card {
+          padding: 20px 8px;
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+        *,
+        *:before,
+        *:after {
+          animation: none !important;
+          transition: none !important;
+        }
+      }
+    </style>
+    <style>
+      :root {
+        --paper: #f5fbf9;
+        --cream: #f5fbf9;
+        --cream-deep: #eef8f5;
+        --line: #cceae2;
+        --tint: #eaf8f5;
+      }
+      body {
+        background: #dcf3ec;
+      }
+      .page {
+        background: var(--paper);
+      }
+      section,
+      footer {
+        background: var(--paper);
+      }
+      .banner,
+      #problem-section,
+      #product,
+      #guidance,
+      #comparison,
+      #ingredients,
+      #routine,
+      #quality,
+      #experiences,
+      #faq {
+        background: var(--cream);
+      }
+      .emotional-card,
+      .card,
+      .story,
+      .trust-card,
+      .herb,
+      .problem-card-body,
+      .form-card,
+      .offer-box,
+      .formula-pair > div,
+      .faq button,
+      .loading-box,
+      .pp-modal {
+        background: #f5fbf9;
+      }
+      .kit-visual,
+      .herb-visual,
+      .how-symbol,
+      .use-symbol {
+        background: linear-gradient(145deg, #f5fbf9, #eaf8f5);
+      }
+      .sticky {
+        background: rgba(245, 251, 249, 0.95);
+      }
+      .disclaimer {
+        background: var(--cream-deep);
+      }
+      .banner {
+        min-height: 0;
+        height: auto;
+        padding: 0;
+        display: block;
+        background: var(--cream);
+      }
+      .topbar {
+        display: none !important;
+      }
+      .banner > * {
+        display: none !important;
+      }
+      .banner::before {
+        display: none;
+      }
+      .banner > .hero-banner-image {
+        display: block !important;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1080 / 1920;
+        object-fit: cover;
+        object-position: center;
+      }
+      @media (max-width: 360px) {
+      }
+    </style>
+    <style>
+      #mens-concerns,
+      #womens-concerns {
+        background: var(--cream);
+      }
+      #mens-concerns .section-head .kicker,
+      #womens-concerns .section-head .kicker {
+        display: none;
+      }
+      .men-flow {
+        position: relative;
+        display: grid;
+        gap: 28px;
+      }
+      .men-flow::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 80px;
+        bottom: 80px;
+        width: 2px;
+        transform: translateX(-50%);
+        background: repeating-linear-gradient(
+          to bottom,
+          #72d2bd 0 6px,
+          transparent 6px 12px
+        );
+      }
+      .men-step {
+        position: relative;
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) 30px minmax(0, 1fr);
+        gap: 8px;
+        align-items: center;
+        min-height: 166px;
+      }
+      .men-image {
+        grid-column: 1;
+        grid-row: 1;
+        overflow: hidden;
+        aspect-ratio: 1 / 1.06;
+        border: 2px solid #cceae2;
+        border-radius: 18px;
+        background: #f5fbf9;
+        box-shadow: 0 8px 20px rgba(18, 59, 70, 0.08);
+      }
+      .men-image img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .men-marker {
+        grid-column: 2;
+        grid-row: 1;
+        z-index: 1;
+        display: grid;
+        place-items: center;
+        width: 30px;
+        height: 30px;
+        background: var(--cream);
+        color: var(--blue);
+        border: 2px solid var(--blue);
+        border-radius: 50%;
+        box-shadow: 0 0 0 4px var(--cream);
+        font:
+          700 11px/1 Hind,
+          sans-serif;
+      }
+      .men-caption {
+        grid-column: 3;
+        grid-row: 1;
+        position: relative;
+        padding: 14px 11px;
+        background: #eaf8f5;
+        border: 1px solid #cceae2;
+        border-radius: 14px;
+        box-shadow: 0 5px 14px rgba(18, 59, 70, 0.04);
+      }
+      .men-caption h3 {
+        font:
+          600 17px/1.5 Hind,
+          sans-serif;
+        color: var(--navy);
+      }
+      .men-step:nth-child(even) .men-image {
+        grid-column: 3;
+      }
+      .men-step:nth-child(even) .men-caption {
+        grid-column: 1;
+      }
+      @media (max-width: 360px) {
+        .men-step {
+          grid-template-columns: minmax(0, 1fr) 26px minmax(0, 1fr);
+          gap: 6px;
+          min-height: 145px;
+        }
+        .men-marker {
+          width: 26px;
+          height: 26px;
+          font-size: 10px;
+        }
+        .men-caption {
+          padding: 12px 9px;
+        }
+        .men-caption h3 {
+          font-size: 15px;
+        }
+        .men-image {
+          border-radius: 14px;
+        }
+        .men-flow::before {
+          top: 70px;
+          bottom: 70px;
+        }
+      }
+    </style>
+    <style>
+      :is(#mens-concerns, #womens-concerns) .men-flow {
+        gap: 34px;
+        padding: 20px 8px 12px;
+        background: radial-gradient(
+            circle,
+            rgba(32, 184, 154, 0.12) 1px,
+            transparent 1px
+          )
+          0 0 / 14px 14px;
+      }
+      :is(#mens-concerns, #womens-concerns) .men-flow::before {
+        display: none;
+      }
+      :is(#mens-concerns, #womens-concerns) .men-step {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
+        grid-template-rows: 200px;
+        gap: 0;
+        width: 100%;
+        height: 200px;
+        min-height: 200px;
+        isolation: isolate;
+      }
+      :is(#mens-concerns, #womens-concerns) .men-step:nth-child(even) {
+        grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+      }
+      :is(#mens-concerns, #womens-concerns) .men-step::before {
+        content: "";
+        position: absolute;
+        inset: 5px 0;
+        z-index: -1;
+        background: #f5fbf9;
+        border: 1px solid #cceae2;
+        box-shadow: 0 6px 12px rgba(18, 59, 70, 0.08);
+        transform: rotate(1deg);
+      }
+      :is(#mens-concerns, #womens-concerns) .men-step:nth-child(even)::before {
+        transform: rotate(-1deg);
+      }
+      :is(#mens-concerns, #womens-concerns) .men-image {
+        grid-column: 1;
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        min-width: 0;
+        aspect-ratio: 1 / 1;
+        padding: 7px 7px 18px;
+        border: 1px solid #cceae2;
+        border-radius: 2px;
+        background: #f5fbf9;
+        box-shadow: 0 8px 14px rgba(18, 59, 70, 0.15);
+        transform: rotate(-7deg);
+      }
+      :is(#mens-concerns, #womens-concerns) .men-image img {
+        border: 1px solid rgba(18, 59, 70, 0.08);
+      }
+      :is(#mens-concerns, #womens-concerns) .men-caption {
+        grid-column: 2;
+        min-width: 0;
+        padding: 26px 12px 14px 18px;
+        overflow-wrap: anywhere;
+        background: transparent;
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
+      }
+      :is(#mens-concerns, #womens-concerns) .men-caption::after {
+        content: "";
+        display: block;
+        width: 32px;
+        height: 3px;
+        margin-top: 14px;
+        border-radius: 3px;
+        background: var(--blue);
+      }
+      :is(#mens-concerns, #womens-concerns) .men-marker {
+        position: absolute;
+        grid-column: auto;
+        grid-row: auto;
+        top: 13px;
+        right: 12px;
+        width: auto;
+        height: auto;
+        border: 0;
+        border-radius: 0;
+        background: transparent;
+        box-shadow: none;
+        color: var(--blue);
+        letter-spacing: 2px;
+      }
+      :is(#mens-concerns, #womens-concerns) .men-step::after {
+        content: "";
+        position: absolute;
+        z-index: 3;
+        top: 50%;
+        margin-top: calc(-23.81% + 3px);
+        left: 24%;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background: radial-gradient(
+          circle at 32% 28%,
+          #eaf8f5,
+          #20b89a 55%,
+          #0e7c66
+        );
+        box-shadow: 2px 5px 5px rgba(18, 59, 70, 0.25);
+      }
+      :is(#mens-concerns, #womens-concerns)
+        .men-step:nth-child(even)
+        .men-image {
+        grid-column: 2;
+        transform: rotate(7deg);
+      }
+      :is(#mens-concerns, #womens-concerns)
+        .men-step:nth-child(even)
+        .men-caption {
+        grid-column: 1;
+        padding: 26px 18px 14px 12px;
+      }
+      :is(#mens-concerns, #womens-concerns)
+        .men-step:nth-child(even)
+        .men-marker {
+        right: auto;
+        left: 12px;
+      }
+      :is(#mens-concerns, #womens-concerns) .men-step:nth-child(even)::after {
+        left: auto;
+        right: 24%;
+      }
+      @media (max-width: 360px) {
+        :is(#mens-concerns, #womens-concerns) .men-flow {
+          gap: 28px;
+          padding-inline: 6px;
+        }
+        :is(#mens-concerns, #womens-concerns) .men-step {
+          min-height: 200px;
+        }
+        :is(#mens-concerns, #womens-concerns) .men-caption {
+          padding-left: 12px;
+          padding-right: 8px;
+        }
+        :is(#mens-concerns, #womens-concerns)
+          .men-step:nth-child(even)
+          .men-caption {
+          padding-left: 8px;
+          padding-right: 12px;
+        }
+      }
+      #product {
+        padding-top: 20px;
+        padding-bottom: 40px;
+        background: var(--cream);
+      }
+      #product .section-head {
+        text-align: center;
+        margin-bottom: 24px;
+      }
+      #product .section-head .kicker {
+        color: var(--blue);
+        font: 700 12px/1.4 Hind, sans-serif;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin-bottom: 6px;
+      }
+      #product .section-head h2 {
+        color: var(--navy);
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 1.3;
+      }
+      #product .product-subheading {
+        color: var(--blue);
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 1.4;
+        margin: 0;
+      }
+      #women-support {
+        display: none !important;
+      }
+      #guidance {
+        display: none !important;
+      }
+      /* FAQ order: product basics → benefit → safety → timeline → payment */
+      #faq .faq-list {
+        display: flex;
+        flex-direction: column;
+      }
+      #faq .faq:nth-child(3) { order: 1; }
+      #faq .faq:nth-child(4) { order: 2; }
+      #faq .faq:nth-child(2) { order: 3; }
+      #faq .faq:nth-child(1) { order: 4; }
+      #faq .faq:nth-child(5) { order: 5; }
+      #faq .faq:nth-child(6) { order: 6; }
+      #product .product-panel {
+        padding: 0;
+        border: 0;
+        box-shadow: none;
+      }
+      .product-showcase {
+        position: relative;
+        isolation: isolate;
+        overflow: visible;
+        display: grid;
+        place-items: center;
+        width: min(100%, 360px);
+        aspect-ratio: 1;
+        padding: 26px;
+        border: 1px solid #cceae2;
+        border-radius: 50%;
+        background: radial-gradient(circle at 50% 50%, #ffffff 0%, #eaf8f5 62%, #d8f1e3 100%);
+        outline: 2px dashed rgba(214, 164, 72, 0.62);
+        outline-offset: 28px;
+        box-shadow: 0 0 0 9px #f5fbf9, 0 0 0 10px #72d2bd, 0 14px 30px rgba(18, 59, 70, 0.13);
+        text-align: center;
+        max-width: 360px;
+        margin: 46px auto 44px;
+      }
+      .showcase-orbit-icon,
+      .showcase-callout {
+        position: absolute;
+        z-index: 3;
+        display: grid;
+        place-items: center;
+        color: #fffdf5;
+        background: #23664f;
+        border: 6px solid #f5fbf9;
+        border-radius: 50%;
+        box-shadow: 0 8px 15px rgba(18, 59, 70, 0.18);
+      }
+      .showcase-orbit-icon {
+        top: -42px;
+        left: 50%;
+        width: 62px;
+        height: 62px;
+        transform: translateX(-50%);
+        font-size: 22px;
+      }
+      .showcase-badge {
+        position: absolute;
+        z-index: 3;
+        top: -13px;
+        right: 8px;
+        padding: 11px 17px;
+        border-radius: 999px;
+        background: #b87818;
+        color: #fff;
+        box-shadow: 0 8px 15px rgba(139, 85, 18, 0.22);
+        font-size: 13px;
+        font-weight: 700;
+        white-space: nowrap;
+      }
+      .showcase-callout {
+        bottom: -16px;
+        width: 54px;
+        height: 54px;
+        font-size: 18px;
+      }
+      .showcase-callout-left { left: 2px; }
+      .showcase-callout-right { right: 2px; }
+      .showcase-callout b {
+        position: absolute;
+        top: 58px;
+        width: 118px;
+        color: var(--navy);
+        font: 600 13px/1.35 Hind, sans-serif;
+        letter-spacing: 0;
+        white-space: nowrap;
+        text-align: center;
+      }
+      .showcase-callout-left b { left: -32px; }
+      .showcase-callout-right b { right: -32px; }
+      .product-showcase::before,
+      .product-showcase::after {
+        content: "";
+        position: absolute;
+        border: 1px solid rgba(32, 184, 154, 0.35);
+        border-radius: 50%;
+        pointer-events: none;
+      }
+      .product-showcase::before { inset: 12px; }
+      .product-showcase::after {
+        inset: 2px;
+        border-color: rgba(214, 164, 72, 0.5);
+        border-style: dashed;
+      }
+      .product-photo {
+        display: block;
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        max-height: none;
+        object-fit: cover;
+        object-position: center center;
+        border: 8px solid #fffdf5;
+        border-radius: 50%;
+        margin: 0 auto;
+        box-shadow: 0 8px 18px rgba(18, 59, 70, 0.16);
+        transition: transform 0.25s ease;
+      }
+      .product-photo:hover {
+        transform: translateY(-3px) scale(1.02);
+      }
+      .product-description {
+        text-align: center;
+        margin: 18px auto 20px;
+        padding: 14px 18px;
+        border-radius: 14px;
+        background: #ffffff;
+        border: 1px solid #dcf3ec;
+        color: var(--navy);
+        font-size: 15.5px;
+        line-height: 1.5;
+        font-weight: 600;
+        max-width: 420px;
+      }
+      .formula-cards {
+        display: grid;
+        gap: 12px;
+        max-width: 420px;
+        margin: 0 auto;
+      }
+      .formula-card {
+        position: relative;
+        isolation: isolate;
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        padding: 15px 18px;
+        border: 1px solid #b9e3d3;
+        border-radius: 16px;
+        background: linear-gradient(135deg, #ffffff 0%, #f5fbf9 100%);
+        box-shadow: 0 6px 16px rgba(18, 59, 70, 0.06), inset 0 0 0 1px rgba(255, 255, 255, 0.8);
+        transition: transform 0.22s ease, border-color 0.22s ease, box-shadow 0.22s ease;
+      }
+      .formula-card::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        inset: 5px;
+        border: 1px solid rgba(114, 210, 189, 0.3);
+        border-radius: 11px;
+        pointer-events: none;
+      }
+      .formula-card::after {
+        content: "";
+        position: absolute;
+        left: -1px;
+        top: 14px;
+        bottom: 14px;
+        width: 3px;
+        border-radius: 0 4px 4px 0;
+        background: var(--blue);
+      }
+      .formula-card:hover {
+        transform: translateY(-4px);
+        border-color: #20b89a;
+        box-shadow: 0 12px 24px rgba(32, 184, 154, 0.16), inset 0 0 0 1px rgba(114, 210, 189, 0.25);
+      }
+      .formula-card:nth-child(2) {
+        background: linear-gradient(135deg, #ffffff 0%, #eef9f5 100%);
+      }
+      .formula-card:nth-child(3) {
+        background: linear-gradient(135deg, #ffffff 0%, #f1faf7 100%);
+      }
+      .formula-icon {
+        width: 44px;
+        height: 44px;
+        border-radius: 12px;
+        background: #eaf8f5;
+        color: var(--blue);
+        border: 1px solid #cceae2;
+        display: grid;
+        place-items: center;
+        font-size: 20px;
+        flex-shrink: 0;
+      }
+      .formula-text {
+        flex: 1;
+        min-width: 0;
+      }
+      .formula-text h3 {
+        margin: 0;
+        color: var(--navy);
+        font: 600 16.5px/1.4 Hind, sans-serif;
+      }
+      .formula-step {
+        font: 700 12px/1 Hind, sans-serif;
+        color: var(--blue);
+        background: #eaf8f5;
+        padding: 4px 9px;
+        border-radius: 8px;
+        border: 1px solid #a9dcc9;
+        box-shadow: 0 3px 8px rgba(32, 184, 154, 0.1);
+        flex-shrink: 0;
+      }
+      @media (max-width: 360px) {
+        #product .section-head h2 { font-size: 25px; }
+        .product-showcase { width: min(100%, 300px); padding: 22px; margin-top: 40px; }
+        .product-photo { max-height: none; }
+        .showcase-badge { right: -4px; padding: 9px 12px; font-size: 11px; }
+        .showcase-callout { width: 48px; height: 48px; font-size: 16px; bottom: -12px; }
+        .showcase-callout b { top: 52px; width: 105px; font-size: 10px; line-height: 1.35; }
+        .showcase-callout-left { left: 0; }
+        .showcase-callout-right { right: 0; }
+        .formula-card { padding: 13px 14px; gap: 11px; }
+        .formula-icon { width: 38px; height: 38px; font-size: 17px; }
+        .formula-text h3 { font-size: 15px; }
+      }
+    </style>
+    <style>
+      :is(#how-it-works, #women-support) {
+        background: var(--cream);
+      }
+      :is(#how-it-works, #women-support) .how-flow {
+        position: relative;
+        --circle-size: 128px;
+        gap: 24px;
+      }
+      :is(#how-it-works, #women-support) .how-step {
+        position: relative;
+        grid-template-columns: var(--circle-size) minmax(0, 1fr);
+        gap: 14px;
+        min-height: 152px;
+        align-items: center;
+      }
+      :is(#how-it-works, #women-support) .how-step:not(:last-child)::before {
+        content: "";
+        position: absolute;
+        left: calc(var(--circle-size) / 2 - 1px);
+        top: 50%;
+        height: calc(100% + 24px);
+        width: 3px;
+        background: #cceae2;
+        pointer-events: none;
+      }
+      :is(#how-it-works, #women-support) .how-symbol {
+        position: relative;
+        z-index: 1;
+        grid-column: 1;
+        grid-row: 1;
+        width: var(--circle-size);
+        height: var(--circle-size);
+        min-width: 0;
+        overflow: hidden;
+        border: 4px solid #72d2bd;
+        border-radius: 50%;
+        box-shadow: 0 6px 15px rgba(18, 59, 70, 0.08);
+        transition:
+          transform 0.25s ease,
+          box-shadow 0.25s ease,
+          border-color 0.25s ease;
+      }
+      :is(#how-it-works, #women-support) .how-symbol img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.4s ease;
+      }
+      #how-it-works .how-symbol {
+        background: linear-gradient(145deg, #eaf8f5, #d8f1e3);
+        color: var(--blue);
+        font-size: 35px;
+      }
+      #how-it-works .how-symbol i {
+        position: relative;
+        z-index: 1;
+      }
+      #how-it-works .how-symbol span {
+        position: absolute;
+        right: 7px;
+        bottom: 5px;
+        display: grid;
+        place-items: center;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background: var(--navy);
+        color: #fff;
+        font: 600 10px/1 Hind, sans-serif;
+      }
+      #how-it-works .how-copy {
+        border-color: #b9e3d3;
+        background: linear-gradient(135deg, #ffffff, #f0faf6);
+        box-shadow: 0 7px 18px rgba(18, 59, 70, 0.06);
+      }
+      #how-it-works .how-copy h3 {
+        color: var(--navy);
+        font-size: 17px;
+      }
+      :is(#how-it-works, #women-support) .how-copy {
+        grid-column: 2;
+        grid-row: 1;
+        min-width: 0;
+        padding: 14px 12px;
+        border: 1px solid #cceae2;
+        border-radius: 16px;
+        background: linear-gradient(135deg, #f5fbf9, #eaf8f5);
+        box-shadow: 0 5px 14px rgba(18, 59, 70, 0.04);
+        transition:
+          border-color 0.25s ease,
+          box-shadow 0.25s ease;
+      }
+      :is(#how-it-works, #women-support) .how-copy h3 {
+        font-size: 16px;
+        line-height: 1.35;
+        margin-bottom: 7px;
+      }
+      :is(#how-it-works, #women-support) .how-copy p {
+        font-size: 13px;
+        line-height: 1.55;
+      }
+      @keyframes compactHowReveal {
+        from {
+          opacity: 0.25;
+          transform: translateY(12px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      :is(#how-it-works, #women-support) .how-step.has-entered {
+        animation: compactHowReveal 0.55s ease-out;
+      }
+      @media (max-width: 360px) {
+        :is(#how-it-works, #women-support) .how-flow {
+          --circle-size: 104px;
+        }
+        :is(#how-it-works, #women-support) .how-step {
+          gap: 12px;
+        }
+        :is(#how-it-works, #women-support) .how-copy {
+          padding: 10px 8px;
+        }
+        :is(#how-it-works, #women-support) .how-copy h3 {
+          font-size: 15px;
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        :is(#how-it-works, #women-support) .how-step,
+        :is(#how-it-works, #women-support) .how-step * {
+          animation: none !important;
+          transition: none !important;
+          transform: none !important;
+        }
+      }
+      :is(#how-it-works, #women-support) .how-flow {
+        --circle-size: 148px;
+        gap: 30px;
+      }
+      #how-it-works .section-head .kicker,
+      #women-support .section-head .kicker {
+        display: none;
+      }
+      #how-it-works .section-head .kicker {
+        display: block;
+        color: var(--blue);
+        font: 700 12px/1.4 Hind, sans-serif;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin-bottom: 7px;
+      }
+      :is(#how-it-works, #women-support) .how-step {
+        grid-template-columns: var(--circle-size) minmax(0, 1fr);
+        gap: 16px;
+        min-height: 172px;
+      }
+      :is(#how-it-works, #women-support) .how-symbol {
+        width: var(--circle-size);
+        height: var(--circle-size);
+        border-width: 4px;
+      }
+      :is(#how-it-works, #women-support) .how-copy {
+        padding: 19px 16px;
+        min-height: 116px;
+        border-radius: 17px;
+      }
+      :is(#how-it-works, #women-support) .how-copy h3 {
+        font-size: 18px;
+        line-height: 1.45;
+        margin-bottom: 9px;
+      }
+      :is(#how-it-works, #women-support) .how-copy p {
+        font-size: 14px;
+        line-height: 1.65;
+      }
+      :is(#how-it-works, #women-support) .how-step:not(:last-child)::before {
+        height: calc(100% + 30px);
+      }
+      @media (max-width: 360px) {
+        :is(#how-it-works, #women-support) .how-flow {
+          --circle-size: 124px;
+          gap: 24px;
+        }
+        :is(#how-it-works, #women-support) .how-step {
+          gap: 12px;
+          min-height: 150px;
+        }
+        :is(#how-it-works, #women-support) .how-copy {
+          padding: 15px 11px;
+          min-height: 104px;
+        }
+        :is(#how-it-works, #women-support) .how-copy h3 {
+          font-size: 16px;
+        }
+      }
+    </style>
+    <style>
+      :is(#how-it-works, #women-support) .how-step:nth-child(even) {
+        grid-template-columns: minmax(0, 1fr) var(--circle-size);
+      }
+      :is(#how-it-works, #women-support) .how-step:nth-child(even) .how-symbol {
+        grid-column: 2;
+        grid-row: 1;
+      }
+      :is(#how-it-works, #women-support) .how-step:nth-child(even) .how-copy {
+        grid-column: 1;
+        grid-row: 1;
+      }
+      :is(#how-it-works, #women-support) .how-step::before,
+      :is(#how-it-works, #women-support) .how-step::after {
+        display: none;
+      }
+      :is(#how-it-works, #women-support) .how-symbol,
+      :is(#how-it-works, #women-support) .how-symbol img,
+      :is(#how-it-works, #women-support) .how-copy {
+        transition: none;
+      }
+      :is(#how-it-works, #women-support) .how-symbol {
+        overflow: visible;
+        border-color: transparent;
+      }
+      :is(#how-it-works, #women-support) .how-symbol img {
+        border-radius: 50%;
+      }
+      :is(#how-it-works, #women-support) .how-symbol::after {
+        content: "";
+        position: absolute;
+        inset: -4px;
+        border: 2px dashed var(--blue);
+        border-radius: 50%;
+        pointer-events: none;
+        animation: wellnessRingSpin 18s linear infinite;
+      }
+      @keyframes wellnessRingSpin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        :is(#how-it-works, #women-support) .how-symbol::after {
+          animation: none;
+        }
+      }
+      #guidance {
+        padding-top: 38px;
+        padding-bottom: 38px;
+      }
+      #guidance .guidance {
+        display: none;
+      }
+      #guidance .section-head h2 {
+        color: var(--navy);
+      }
+      .doctor-profile {
+        overflow: hidden;
+        margin-bottom: 25px;
+        border: 1px solid #cceae2;
+        border-radius: 23px;
+        background: #f5fbf9;
+        box-shadow: 0 12px 28px rgba(18, 59, 70, 0.08);
+      }
+      .doctor-photo-frame {
+        position: relative;
+        margin: 10px 10px 0;
+        overflow: hidden;
+        aspect-ratio: 4 / 3;
+        border: 1px solid #dcf3ec;
+        border-radius: 16px;
+        background: radial-gradient(ellipse at 50% 65%, #dcf3ec, #f5fbf9 80%);
+      }
+      .doctor-photo {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        transition: transform 0.45s ease;
+      }
+      .doctor-bio {
+        padding: 22px 22px 25px;
+        text-align: center;
+      }
+      .doctor-name-row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+      }
+      .doctor-profile-icon {
+        display: grid;
+        place-items: center;
+        flex: 0 0 38px;
+        height: 38px;
+        color: var(--blue);
+        background: #eaf8f5;
+        border: 1px solid #dcf3ec;
+        border-radius: 12px;
+        font-size: 18px;
+      }
+      .doctor-bio h3 {
+        margin: 0;
+        font-size: 25px;
+        color: var(--navy);
+      }
+      .doctor-introduction {
+        margin-top: 16px;
+        padding-top: 16px;
+        border-top: 1px solid var(--line);
+        color: var(--muted);
+        font-size: 15px;
+        line-height: 1.75;
+      }
+      #guidance .guidance {
+        gap: 12px;
+      }
+      #guidance .guidance .card {
+        display: grid;
+        grid-template-columns: 43px minmax(0, 1fr);
+        gap: 6px 13px;
+        min-height: 0;
+        padding: 19px 17px;
+        border-radius: 17px;
+        border-color: #dcf3ec;
+        background: linear-gradient(135deg, #f5fbf9, #eaf8f5);
+        box-shadow: 0 5px 15px rgba(18, 59, 70, 0.04);
+        transition:
+          transform 0.22s ease,
+          border-color 0.22s ease,
+          box-shadow 0.22s ease;
+      }
+      #guidance .guidance .card-icon {
+        grid-column: 1;
+        grid-row: 1 / 3;
+        display: grid;
+        place-items: center;
+        width: 43px;
+        height: 43px;
+        margin: 0;
+        border-radius: 13px;
+        background: #eaf8f5;
+        color: var(--blue);
+        font-size: 19px;
+        transition:
+          background 0.22s ease,
+          color 0.22s ease;
+      }
+      #guidance .guidance h3 {
+        grid-column: 2;
+        margin: 0;
+        font-size: 20px;
+      }
+      #guidance .guidance p {
+        grid-column: 2;
+        font-size: 14px;
+        line-height: 1.65;
+      }
+      @media (hover: hover) and (pointer: fine) {
+        .doctor-profile:hover .doctor-photo {
+          transform: scale(1.025);
+        }
+        #guidance .guidance .card:hover {
+          transform: translateY(-3px);
+          border-color: #72d2bd;
+          box-shadow: 0 10px 22px rgba(32, 184, 154, 0.15);
+        }
+        #guidance .guidance .card:hover .card-icon {
+          background: var(--blue);
+          color: white;
+        }
+      }
+      #guidance .guidance .card:active {
+        transform: scale(0.99);
+        border-color: var(--blue);
+      }
+      @media (max-width: 360px) {
+        .doctor-bio {
+          padding: 19px 16px 22px;
+        }
+        .doctor-bio h3 {
+          font-size: 23px;
+        }
+        #guidance .guidance .card {
+          padding: 16px 13px;
+          gap: 6px 10px;
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .doctor-photo,
+        #guidance .guidance .card,
+        #guidance .guidance .card-icon {
+          transition: none !important;
+          transform: none !important;
+        }
+      }
+    </style>
+    <style>
+      #guidance {
+        background:
+          radial-gradient(ellipse at 100% 35%, #eaf8f5, transparent 65%),
+          #f5fbf9;
+      }
+      #guidance .doctor-profile {
+        position: relative;
+        overflow: visible;
+        margin: 30px 0 0;
+        border: 0;
+        border-radius: 0;
+        background: transparent;
+        box-shadow: none;
+      }
+      #guidance .doctor-photo-frame {
+        margin: 0 18px 0 0;
+        padding: 12px 12px 34px;
+        aspect-ratio: 1 / 1;
+        border: 1px solid #cceae2;
+        border-radius: 70px 18px 18px 18px;
+        background: linear-gradient(145deg, #eaf8f5, #f5fbf9);
+        box-shadow: 10px 10px 0 #dcf3ec;
+      }
+      #guidance .doctor-photo {
+        border-radius: 58px 10px 10px 10px;
+        object-fit: contain;
+      }
+      #guidance .doctor-bio {
+        position: relative;
+        z-index: 1;
+        margin: -24px 0 0 18px;
+        padding: 24px 20px;
+        text-align: left;
+        border: 1px solid #cceae2;
+        border-top: 3px solid var(--blue);
+        border-radius: 6px 6px 24px 6px;
+        background: #f5fbf9;
+        box-shadow: 0 12px 28px rgba(18, 59, 70, 0.08);
+        transition: box-shadow 0.3s ease;
+      }
+      #guidance .doctor-name-row {
+        justify-content: flex-start;
+      }
+      #guidance .doctor-profile-icon {
+        border: 0;
+        border-radius: 50%;
+        background: var(--blue);
+        color: #f5fbf9;
+        box-shadow: 0 0 0 5px #eaf8f5;
+      }
+      #guidance .doctor-introduction {
+        margin-top: 20px;
+        padding-top: 18px;
+        border-top: 1px solid #cceae2;
+      }
+      #guidance .doctor-photo-frame::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          110deg,
+          transparent 35%,
+          rgba(255, 255, 255, 0.6) 50%,
+          transparent 65%
+        );
+        transform: translateX(-120%);
+        pointer-events: none;
+      }
+      @media (hover: hover) and (pointer: fine) {
+        #guidance .doctor-profile:hover .doctor-photo-frame::after {
+          animation: guidanceLightSweep 1.2s ease-out;
+        }
+        #guidance .doctor-profile:hover .doctor-bio {
+          box-shadow: 0 16px 32px rgba(32, 184, 154, 0.16);
+        }
+      }
+      @keyframes guidanceLightSweep {
+        to {
+          transform: translateX(120%);
+        }
+      }
+      @media (max-width: 360px) {
+        #guidance .doctor-photo-frame {
+          margin-right: 12px;
+        }
+        #guidance .doctor-bio {
+          margin-left: 12px;
+          padding: 20px 16px;
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        #guidance .doctor-photo-frame::after {
+          animation: none !important;
+        }
+        #guidance .doctor-bio {
+          transition: none;
+        }
+      }
+      #comparison .section-head h2 {
+        color: var(--navy);
+      }
+      #comparison .section-head {
+        text-align: center;
+        margin-bottom: 26px;
+      }
+      #comparison .kicker {
+        letter-spacing: 2.6px;
+      }
+      #comparison .section-head h2 {
+        max-width: 310px;
+        margin: 10px auto 0;
+        font-size: 28px;
+      }
+      @media (hover: hover) and (pointer: fine) {
+      }
+      @media (max-width: 360px) {
+      }
+      @media (prefers-reduced-motion: reduce) {
+      }
+    </style>
+    <style>
+      #ingredients {
+        padding: 40px 20px;
+        background: var(--cream);
+      }
+      #ingredients .section-head {
+        text-align: center;
+        margin-bottom: 26px;
+      }
+      #ingredients .kicker {
+        color: var(--blue);
+        letter-spacing: 2px;
+      }
+      #ingredients .section-head h2 {
+        color: var(--navy);
+        font-size: 28px;
+        max-width: 300px;
+        margin: 10px auto 0;
+      }
+      #ingredients .section-head::after {
+        content: "";
+        display: block;
+        width: 44px;
+        height: 3px;
+        border-radius: 3px;
+        background: var(--blue);
+        margin: 17px auto 0;
+      }
+      #ingredients .herbs {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 14px;
+        counter-reset: ingredient;
+      }
+      #ingredients .herb {
+        position: relative;
+        display: grid;
+        grid-template-columns: 140px minmax(0, 1fr);
+        align-items: center;
+        gap: 20px;
+        padding: 22px 18px;
+        overflow: hidden;
+        border: 1px solid var(--line);
+        border-radius: 24px 8px 24px 8px;
+        background: var(--tint);
+        box-shadow: 0 5px 15px rgba(18, 59, 70, 0.04);
+        counter-increment: ingredient;
+      }
+      #ingredients .herb:nth-child(even) {
+        background: var(--cream);
+        border-radius: 8px 24px 8px 24px;
+      }
+      #ingredients .herb:last-child {
+        grid-column: auto;
+        width: auto;
+        justify-self: stretch;
+      }
+      #ingredients .herb::after {
+        content: counter(ingredient, decimal-leading-zero);
+        position: absolute;
+        top: 9px;
+        right: 14px;
+        color: #20b89a;
+        opacity: 0.85;
+        font:
+          500 11px/1 Hind,
+          sans-serif;
+        letter-spacing: 1px;
+      }
+      #ingredients .herb-visual {
+        position: relative;
+        width: 140px;
+        height: 140px;
+        padding: 5px;
+        overflow: hidden;
+        border: 1px solid #72d2bd;
+        border-radius: 50%;
+        background: var(--cream);
+        box-shadow: 0 0 0 5px #dcf3ec;
+      }
+      #ingredients .herb-visual span {
+        display: none;
+      }
+      #ingredients .herb-visual img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+        transition: transform 0.3s ease;
+      }
+      #ingredients .herb-content {
+        display: block;
+        min-width: 0;
+        min-height: 0;
+        padding: 0;
+        border: 0;
+        text-align: left;
+      }
+      #ingredients .herb-content h3 {
+        color: var(--blue);
+        font-size: 25px;
+        margin: 0;
+      }
+      #ingredients .herb-content p {
+        display: block;
+        color: var(--navy);
+        font-size: 13px;
+        line-height: 1.65;
+        overflow-wrap: anywhere;
+      }
+      @media (hover: hover) and (pointer: fine) {
+        #ingredients .herb:hover .herb-visual img {
+          transform: scale(1.06);
+        }
+      }
+      @media (max-width: 360px) {
+        #ingredients {
+          padding-inline: 16px;
+        }
+        #ingredients .herb {
+          grid-template-columns: 112px minmax(0, 1fr);
+          padding: 21px 14px;
+          gap: 15px;
+        }
+        #ingredients .herb-visual {
+          width: 112px;
+          height: 112px;
+        }
+        #ingredients .herb-content h3 {
+          font-size: 21px;
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        #ingredients .herb-visual img {
+          transition: none;
+          transform: none !important;
+        }
+      }
+    </style>
+    <style>
+      #routine {
+        padding: 40px 20px;
+        background: var(--cream);
+      }
+      #routine .section-head {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      #routine .section-head h2 {
+        color: var(--navy);
+        font-size: 29px;
+        margin-top: 10px;
+      }
+      #routine .kicker {
+        color: var(--blue);
+        letter-spacing: 2px;
+        font-size: 10px;
+      }
+      @media (max-width: 360px) {
+        #routine {
+          padding-inline: 16px;
+        }
+      }
+    </style>
+    <style>
+      #quality {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background: var(--cream);
+      }
+      #quality .section-head h2 {
+        color: var(--navy);
+      }
+      #quality .trust-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+      }
+      #quality .trust-card {
+        aspect-ratio: auto;
+        overflow: hidden;
+        padding: 0;
+        border: 1px solid #cceae2;
+        border-radius: 19px;
+        background: #f5fbf9;
+        box-shadow: 0 7px 18px rgba(18, 59, 70, 0.06);
+        transition:
+          transform 0.25s ease,
+          border-color 0.25s ease,
+          box-shadow 0.25s ease;
+      }
+      .trust-card-image {
+        height: 125px;
+        overflow: hidden;
+        background: #eaf8f5;
+      }
+      .trust-card-image img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.45s ease;
+      }
+      .trust-card-body {
+        padding: 14px 11px 16px;
+        text-align: center;
+      }
+      .trust-card-body::before {
+        content: "—  —  —";
+        display: block;
+        margin-bottom: 7px;
+        color: #72d2bd;
+        font-size: 13px;
+        letter-spacing: 2px;
+      }
+      .trust-card-body p {
+        display: none;
+      }
+      #quality .trust-card h3 {
+        color: var(--navy);
+        font-size: 18px;
+        margin: 0 0 5px;
+      }
+      #quality .trust-card p {
+        font-size: 12px;
+        line-height: 1.5;
+      }
+      @media (hover: hover) and (pointer: fine) {
+        #quality .trust-card:hover {
+          transform: translateY(-5px);
+          border-color: #72d2bd;
+          box-shadow: 0 15px 27px rgba(32, 184, 154, 0.18);
+        }
+        #quality .trust-card:hover img {
+          transform: scale(1.08);
+        }
+      }
+      #quality .trust-card:active {
+        transform: scale(0.98);
+        border-color: var(--blue);
+      }
+      @media (max-width: 360px) {
+        .trust-card-image {
+          height: 105px;
+        }
+        #quality .trust-card h3 {
+          font-size: 16px;
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        #quality .trust-card,
+        #quality .trust-card img {
+          transition: none !important;
+          transform: none !important;
+        }
+      }
+    </style>
+    <style>
+      #offer .section-head {
+        margin-bottom: 15px;
+      }
+      #offer .section-head h2 {
+        color: var(--navy);
+        font-size: 30px;
+        line-height: 1.4;
+      }
+      @keyframes deliverySway {
+        50% {
+          transform: rotate(4deg) translateY(-2px);
+        }
+      }
+      @keyframes offerShine {
+        0%,
+        65% {
+          transform: translateX(-130%);
+        }
+        90%,
+        100% {
+          transform: translateX(130%);
+        }
+      }
+      @media (hover: hover) and (pointer: fine) {
+      }
+      @media (max-width: 360px) {
+        #offer .section-head h2 {
+          font-size: 27px;
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+      }
+    </style>
+    <style>
+      #order-form {
+        padding: 40px 20px;
+        background: linear-gradient(160deg, #eaf8f5, #f5fbf9 65%, #f5fbf9);
+      }
+      #order-form .section-head {
+        margin-bottom: 18px;
+      }
+      #order-form .section-head h2 {
+        color: var(--navy);
+        font-size: 31px;
+      }
+      #order-form > p {
+        margin-top: 0;
+        margin-bottom: 24px;
+        font-size: 15px;
+      }
+      #order-form .form-card {
+        padding: 0;
+        overflow: hidden;
+        border: 1px solid #cceae2;
+        border-radius: 24px;
+        background: #f5fbf9;
+        box-shadow: 0 16px 34px rgba(18, 59, 70, 0.08);
+      }
+      .order-summary {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 23px 18px;
+        background: linear-gradient(125deg, #0e7c66, #20b89a);
+        color: white;
+      }
+      .order-summary-icon {
+        display: grid;
+        place-items: center;
+        flex: 0 0 43px;
+        height: 43px;
+        border: 1px solid rgba(255, 255, 255, 0.35);
+        border-radius: 13px;
+        background: rgba(255, 255, 255, 0.15);
+        font-size: 21px;
+      }
+      .order-summary-name {
+        flex: 1;
+        min-width: 0;
+      }
+      .order-summary-name strong {
+        display: block;
+        font-size: 16px;
+        line-height: 1.4;
+      }
+      .order-summary-name small {
+        display: block;
+        margin-top: 4px;
+        font-size: 11px;
+        color: #dcf3ec;
+      }
+      #orderForm {
+        padding: 23px 19px 20px;
+      }
+      .order-fields-heading {
+        display: flex;
+        align-items: center;
+        gap: 9px;
+        margin-bottom: 21px;
+        color: var(--navy);
+        font:
+          600 18px/1.4 Hind,
+          sans-serif;
+      }
+      .order-fields-heading i {
+        color: var(--blue);
+        font-size: 17px;
+      }
+      #orderForm .field {
+        margin-bottom: 18px;
+      }
+      #orderForm .field label {
+        color: var(--navy);
+        font-size: 14px;
+        margin-bottom: 7px;
+      }
+      #orderForm .field label i {
+        color: #123b46;
+        width: 19px;
+        margin-right: 4px;
+        font-size: 13px;
+      }
+      #orderForm .field input {
+        height: 52px;
+        font-size: 16px;
+        border: 1px solid #cceae2;
+        border-radius: 12px;
+        background: #eaf8f5;
+        padding: 0 13px;
+        transition:
+          background 0.2s ease,
+          border-color 0.2s ease,
+          box-shadow 0.2s ease;
+      }
+      #orderForm .field input::placeholder {
+        color: #517178;
+        font-size: 13px;
+      }
+      #orderForm .field input:focus {
+        background: #f5fbf9;
+        border-color: var(--blue);
+        outline: 2px solid rgba(32, 184, 154, 0.25);
+        outline-offset: 1px;
+        box-shadow: 0 4px 12px rgba(32, 184, 154, 0.1);
+      }
+      #orderForm .submit {
+        margin-top: 23px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        min-height: 54px;
+        font-size: 17px;
+        border-radius: 13px;
+        transition:
+          background 0.2s ease,
+          transform 0.2s ease,
+          box-shadow 0.2s ease;
+      }
+      #orderForm .submit:active {
+        transform: scale(0.985);
+      }
+      #orderForm .secure {
+        margin-top: 14px;
+        font-size: 12px;
+        line-height: 1.7;
+      }
+      #orderForm .secure i {
+        color: var(--blue);
+        margin-right: 5px;
+      }
+      #order-form .order-status:not(:empty) {
+        margin: 0 19px 20px;
+        padding: 12px;
+        border-radius: 10px;
+        background: #eaf8f5;
+      }
+      #order-form .benefits-title {
+        margin: 23px 0 12px;
+        font:
+          600 16px/1.4 Hind,
+          sans-serif;
+        color: var(--navy);
+      }
+      .order-benefit-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 9px;
+      }
+      .order-benefit {
+        padding: 13px 5px;
+        text-align: center;
+        border: 1px solid #dcf3ec;
+        border-radius: 13px;
+        background: #f5fbf9;
+        color: var(--navy);
+      }
+      .order-benefit i {
+        display: block;
+        margin-bottom: 7px;
+        color: var(--blue);
+        font-size: 19px;
+      }
+      .order-benefit span {
+        display: block;
+        font-size: 11px;
+        line-height: 1.4;
+        font-weight: 600;
+      }
+      @media (hover: hover) and (pointer: fine) {
+        #orderForm .submit:hover {
+          transform: translateY(-2px);
+          background: var(--navy);
+          box-shadow: 0 10px 22px rgba(32, 184, 154, 0.25);
+        }
+      }
+      @media (max-width: 360px) {
+        #order-form {
+          padding: 34px 15px;
+        }
+        .order-summary {
+          padding: 21px 14px;
+          gap: 9px;
+        }
+        .order-summary-icon {
+          flex-basis: 35px;
+          height: 39px;
+          font-size: 18px;
+        }
+        .order-summary-name strong {
+          font-size: 14px;
+        }
+        #orderForm {
+          padding: 21px 15px 18px;
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        #orderForm .field input,
+        #orderForm .submit {
+          transition: none !important;
+          transform: none !important;
+        }
+      }
+    </style>
+    <style>
+      #experiences .stories {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 13px;
+      }
+      #experiences .story {
+        position: relative;
+        padding: 15px;
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        background: var(--paper);
+        box-shadow: 0 4px 12px rgba(18, 59, 70, 0.05);
+        overflow: hidden;
+      }
+      #experiences .story-head {
+        display: flex;
+        align-items: center;
+        gap: 11px;
+        margin: 0 0 12px;
+        padding: 0 30px 0 0;
+        border: 0;
+      }
+      #experiences .story-photo {
+        position: relative;
+        width: 46px;
+        height: 46px;
+        flex: 0 0 46px;
+        border: 1px solid #72d2bd;
+        border-radius: 50%;
+        padding: 3px;
+        background: var(--cream);
+        overflow: hidden;
+      }
+      #experiences .story-photo span {
+        position: absolute;
+        inset: 3px;
+        display: grid;
+        place-items: center;
+        border-radius: 50%;
+        background: var(--tint);
+        color: var(--blue);
+        font-size: 18px;
+        font-weight: 600;
+      }
+      #experiences .story-photo img {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+      #experiences .story-person {
+        min-width: 0;
+      }
+      #experiences .story-person h3 {
+        margin: 0 0 1px;
+        color: var(--navy);
+        font-size: 17px;
+        line-height: 1.4;
+      }
+      #experiences .story-person small {
+        display: block;
+        color: var(--muted);
+        font-size: 12px;
+        line-height: 1.4;
+      }
+      #experiences .story-quote {
+        position: absolute;
+        top: 19px;
+        right: 17px;
+        margin: 0;
+        color: var(--blue);
+      }
+      #experiences .story-quote span {
+        display: block;
+        font:
+          42px/1 Georgia,
+          serif;
+        height: 30px;
+      }
+      #experiences .story p {
+        margin: 0;
+        padding: 11px 12px;
+        border-left: 2px solid #72d2bd;
+        border-radius: 0 10px 10px 0;
+        background: var(--tint);
+        color: var(--navy);
+        font-size: 14px;
+        line-height: 1.6;
+        overflow-wrap: anywhere;
+      }
+      @media (max-width: 360px) {
+        #experiences .story {
+          padding: 12px;
+        }
+        #experiences .story-head {
+          gap: 9px;
+        }
+        #experiences .story p {
+          padding: 10px;
+        }
+      }
+    </style>
+    <style>
+      #disclaimer {
+        padding: 22px 24px;
+        background: var(--cream-deep);
+        border-top: 1px solid var(--line);
+        border-bottom: 1px solid var(--line);
+      }
+      #disclaimer h2 {
+        margin: 0 0 9px;
+        font-size: 13px;
+        font-weight: 600;
+        color: #123b46;
+        letter-spacing: 0.03em;
+      }
+      #disclaimer p {
+        margin: 0;
+        font-size: 11px;
+        line-height: 1.7;
+        color: #123b46;
+      }
+      #disclaimer p + p {
+        margin-top: 7px;
+      }
+      .page > footer {
+        padding: 28px 22px 30px;
+        background: var(--cream);
+        text-align: center;
+      }
+      footer .brand {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        color: var(--navy);
+        font-size: 24px;
+        line-height: 1.2;
+      }
+      footer .brand small {
+        font-size: 9px;
+        font-weight: 500;
+        letter-spacing: 0.16em;
+        color: var(--muted);
+      }
+      footer .policy-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 4px 6px;
+        margin: 19px 0 16px;
+        padding-bottom: 17px;
+        border-bottom: 1px solid var(--line);
+      }
+      footer .policy-links button {
+        padding: 9px 8px;
+        border-radius: 7px;
+        font-size: 11px;
+        color: var(--muted);
+        text-decoration: none;
+        cursor: pointer;
+        transition:
+          background 0.2s,
+          color 0.2s;
+      }
+      footer .policy-links button:hover {
+        background: var(--tint);
+        color: var(--blue);
+      }
+      footer .policy-links button:focus-visible {
+        outline: 2px solid var(--blue);
+        outline-offset: 2px;
+      }
+      footer p {
+        margin: 0;
+        font-size: 10px;
+        line-height: 1.7;
+        color: #123b46;
+      }
+      footer p + p {
+        margin-top: 5px;
+      }
+      @media (prefers-reduced-motion: reduce) {
+        footer .policy-links button {
+          transition: none;
+        }
+      }
+    </style>
+    <style>
+      #disclaimer {
+        padding: 24px 20px 10px;
+        background: #f5fbf9;
+        border: 0;
+        text-align: center;
+      }
+      #disclaimer h2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 7px;
+        margin: 0 0 13px;
+        color: #123b46;
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 0;
+      }
+      #disclaimer h2 span {
+        font-size: 15px;
+        opacity: 0.8;
+      }
+      #disclaimer p {
+        color: #123b46;
+        font-size: 11px;
+        line-height: 1.72;
+        margin: 0;
+      }
+      .page > footer {
+        background: #f5fbf9;
+        padding: 5px 16px 26px;
+      }
+      footer .policy-links {
+        gap: 4px 0;
+        margin: 0;
+        padding: 0;
+        border: 0;
+      }
+      footer .policy-links button {
+        position: relative;
+        color: rgba(32, 184, 154, 0.95);
+        font-family: Georgia, serif;
+        font-size: 11px;
+        padding: 6px 9px;
+        border-radius: 0;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+      }
+      footer .policy-links button:not(:last-child)::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 11px;
+        height: 11px;
+        border-right: 1px solid #cceae2;
+      }
+      footer .policy-links button:hover {
+        color: var(--navy);
+        background: transparent;
+      }
+    </style>
+    <style>
+      #faq {
+        background: var(--cream);
+        padding: 34px 20px 38px;
+      }
+      #faq .section-head {
+        margin-bottom: 22px;
+      }
+      #faq .kicker {
+        font-size: 13px;
+        letter-spacing: 2.5px;
+        margin-bottom: 7px;
+      }
+      #faq .section-head h2 {
+        font-size: 27px;
+        color: var(--navy);
+      }
+      #faq .faq-list {
+        display: grid;
+        gap: 10px;
+      }
+      #faq .faq {
+        overflow: hidden;
+        border: 1px solid var(--line);
+        border-radius: 15px;
+        background: rgba(245, 251, 249, 0.85);
+        box-shadow: 0 5px 15px rgba(18, 59, 70, 0.05);
+        transition:
+          border-color 0.2s,
+          box-shadow 0.2s,
+          transform 0.2s;
+      }
+      #faq .faq:hover {
+        border-color: #cceae2;
+        box-shadow: 0 9px 22px rgba(18, 59, 70, 0.08);
+        transform: translateY(-2px);
+      }
+      #faq .faq button {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        width: 100%;
+        min-height: 58px;
+        padding: 13px 14px 13px 17px;
+        border: 0;
+        background: transparent;
+        color: var(--navy);
+        text-align: left;
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 1.45;
+      }
+      #faq .faq button::before {
+        content: "?";
+        display: grid;
+        place-items: center;
+        width: 24px;
+        height: 24px;
+        flex: 0 0 24px;
+        border-radius: 8px;
+        background: var(--tint);
+        color: var(--blue);
+        font-size: 14px;
+        font-weight: 700;
+      }
+      #faq .faq button span {
+        display: grid;
+        place-items: center;
+        width: 25px;
+        height: 25px;
+        margin-left: auto;
+        flex: 0 0 25px;
+        border-radius: 50%;
+        background: var(--tint);
+        color: var(--blue);
+        font-size: 20px;
+        font-weight: 400;
+        transition:
+          transform 0.25s,
+          background 0.25s;
+      }
+      #faq .faq button[aria-expanded="true"] span {
+        transform: rotate(45deg);
+        background: var(--blue);
+        color: #fff;
+      }
+      #faq .faq:has(button[aria-expanded="true"]) {
+        border-color: #72d2bd;
+        box-shadow: 0 10px 25px rgba(32, 184, 154, 0.15);
+      }
+      #faq .answer {
+        padding: 0 18px 16px 53px;
+        color: var(--muted);
+        font-size: 13px;
+        line-height: 1.75;
+      }
+      @media (max-width: 360px) {
+        #faq .section-head h2 {
+          font-size: 24px;
+        }
+        #faq .faq button {
+          font-size: 14px;
+          padding-left: 13px;
+        }
+        #faq .answer {
+          padding-left: 48px;
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        #faq .faq,
+        #faq .faq button span {
+          transition: none;
+        }
+      }
+    </style>
+    <style>
+      .page > section[id]:not(#disclaimer):not(.disclaimer) {
+        --text-kicker: 18px;
+        --text-heading: 30px;
+        --text-subheading: 20px;
+        --text-body: 16px;
+        --text-label: 14px;
+        --text-caption: 12px;
+      }
+      .page > section[id]:not(#disclaimer):not(.disclaimer) .kicker {
+        font:
+          700 var(--text-kicker)/1.5 Hind,
+          sans-serif;
+        letter-spacing: 2px;
+      }
+      .page > section[id]:not(#disclaimer):not(.disclaimer) h2 {
+        font:
+          700 var(--text-heading)/1.35 Halant,
+          serif;
+      }
+      .page
+        > section[id]:not(#disclaimer):not(.disclaimer)
+        :is(h3, h4, .option-title) {
+        font:
+          600 var(--text-subheading)/1.45 Hind,
+          sans-serif;
+      }
+      .page
+        > section[id]:not(#disclaimer):not(.disclaimer)
+        :is(p, .answer, .quote-box) {
+        font-size: var(--text-body);
+        line-height: 1.65;
+      }
+      .page
+        > section[id]:not(#disclaimer):not(.disclaimer)
+        :is(.cta, .submit, .faq button, input, .order-summary-name strong) {
+        font-size: var(--text-body);
+        line-height: 1.5;
+      }
+      .page
+        > section[id]:not(#disclaimer):not(.disclaimer)
+        :is(label, .ritual-dose-label, .option-subtitle, .ritual-days span) {
+        font-size: var(--text-label);
+        line-height: 1.5;
+      }
+      .page
+        > section[id]:not(#disclaimer):not(.disclaimer)
+        :is(small, .option-category, .secure, .err, .order-benefit span) {
+        font-size: var(--text-caption);
+        line-height: 1.5;
+      }
+      .page > section[id]:not(#disclaimer):not(.disclaimer) input::placeholder {
+        font-size: var(--text-label);
+      }
+      .page
+        > section[id]:not(#disclaimer):not(.disclaimer)
+        .ritual-dose
+        strong {
+        font-size: var(--text-subheading);
+        line-height: 1.45;
+      }
+      @media (max-width: 360px) {
+        .page > section[id]:not(#disclaimer):not(.disclaimer) {
+          --text-kicker: 16px;
+          --text-heading: 28px;
+          --text-subheading: 18px;
+        }
+      }
+    </style>
+    <style>
+      /* Ingredients: circular image + label cards inspired by the reference */
+      #ingredients .herbs {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 22px 15px;
+      }
+      #ingredients .herb,
+      #ingredients .herb:nth-child(even),
+      #ingredients .herb:last-child {
+        position: relative;
+        display: block;
+        aspect-ratio: 1;
+        padding: 0;
+        overflow: hidden;
+        border: 1px solid #9bd5c3;
+        border-radius: 50%;
+        background: #f5fbf9;
+        box-shadow: 0 8px 18px rgba(18, 59, 70, 0.1), inset 0 0 0 5px #eaf8f5;
+      }
+      #ingredients .herb::before {
+        content: "";
+        position: absolute;
+        z-index: 3;
+        inset: 7px;
+        border: 1px solid rgba(32, 184, 154, 0.55);
+        border-radius: 50%;
+        pointer-events: none;
+      }
+      #ingredients .herb::after {
+        display: none;
+      }
+      #ingredients .herb-visual {
+        position: absolute;
+        inset: 0 0 36% 0;
+        width: auto;
+        height: auto;
+        padding: 0;
+        border: 0;
+        border-radius: 50% 50% 0 0;
+        box-shadow: none;
+        background: #d8f1e3;
+      }
+      #ingredients .herb-visual img {
+        border-radius: 50% 50% 0 0;
+      }
+      #ingredients .herb-content {
+        position: absolute;
+        z-index: 2;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 37%;
+        display: grid;
+        place-items: center;
+        padding: 6px 8px 10px;
+        border-top: 1px solid rgba(32, 184, 154, 0.55);
+        background: #f5fbf9;
+        text-align: center;
+      }
+      #ingredients .herb-content h3 {
+        color: var(--navy);
+        font-size: clamp(16px, 4.2vw, 21px);
+        line-height: 1.2;
+        margin: 0;
+      }
+      @media (max-width: 360px) {
+        #ingredients .herbs { gap: 16px 10px; }
+        #ingredients .herb::before { inset: 5px; }
+        #ingredients .herb-content { padding-inline: 5px; }
+        #ingredients .herb-content h3 { font-size: 15px; }
+      }
+    </style>
+    <style>
+      /* Customer experiences: polished testimonial cards */
+      #experiences {
+        background: #eef9f5;
+      }
+      #experiences .stories {
+        gap: 16px;
+      }
+      #experiences .story {
+        position: relative;
+        padding: 19px 18px 18px;
+        overflow: hidden;
+        border: 1px solid #b9e3d3;
+        border-radius: 24px 10px 24px 10px;
+        background: linear-gradient(145deg, #ffffff 0%, #f3fbf7 100%);
+        box-shadow: 0 8px 20px rgba(18, 59, 70, 0.07);
+        transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease;
+      }
+      #experiences .story::before {
+        content: "★★★★★";
+        display: block;
+        margin-bottom: 13px;
+        color: #c58a2c;
+        font-size: 13px;
+        letter-spacing: 3px;
+      }
+      #experiences .story::after {
+        content: "";
+        position: absolute;
+        top: -45px;
+        right: -35px;
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        background: #d8f1e3;
+        opacity: .55;
+        transition: transform .35s ease;
+      }
+      #experiences .story:hover {
+        transform: translateY(-6px);
+        border-color: #20b89a;
+        box-shadow: 0 16px 30px rgba(32, 184, 154, .18), 0 0 0 3px rgba(114, 210, 189, .12);
+      }
+      #experiences .story:hover::after {
+        transform: scale(1.35);
+      }
+      #experiences .story-head {
+        position: relative;
+        z-index: 1;
+        gap: 12px;
+        margin-bottom: 14px;
+        padding-bottom: 13px;
+        border-bottom: 1px solid #d6eee2;
+      }
+      #experiences .story-photo {
+        width: 52px;
+        height: 52px;
+        flex-basis: 52px;
+        border: 2px solid #72d2bd;
+        padding: 3px;
+        background: #eaf8f5;
+        box-shadow: 0 4px 10px rgba(32, 184, 154, .14);
+      }
+      #experiences .story-person h3 {
+        font-size: 18px;
+        color: var(--navy);
+      }
+      #experiences .story-person small {
+        color: #517178;
+      }
+      #experiences .story-quote {
+        top: 75px;
+        right: 18px;
+        z-index: 2;
+        display: grid;
+        place-items: center;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background: #e0f4e8;
+        color: var(--blue);
+      }
+      #experiences .story-quote span {
+        font-size: 28px;
+        line-height: 1;
+      }
+      #experiences .story > p {
+        position: relative;
+        z-index: 1;
+        font-size: 15px;
+        line-height: 1.7;
+        color: #244d48;
+      }
+    </style>
+    <style>
+      /* Sticky order bar */
+      .sticky {
+        max-width: calc(var(--w) - 28px);
+        width: calc(100% - 28px);
+        padding: 8px 8px 8px 17px;
+        border: 1px solid #b9e3d3;
+        border-radius: 18px;
+        background: rgba(245, 251, 249, .98);
+        box-shadow: 0 10px 30px rgba(18, 59, 70, .16), 0 0 0 4px rgba(114, 210, 189, .1);
+      }
+      .sticky > div { position: relative; padding-left: 28px; }
+      .sticky > div::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 20px;
+        height: 20px;
+        transform: translateY(-50%);
+        border: 1px solid #72d2bd;
+        border-radius: 50%;
+        background: #d8f1e3;
+        box-shadow: inset 0 0 0 5px #f5fbf9;
+      }
+      .sticky strong { display: block; color: var(--navy); font-size: 15px; line-height: 1.25; }
+      .sticky small { color: #517178; font-size: 11px; line-height: 1.35; }
+      .sticky a {
+        min-height: 44px;
+        padding: 10px 18px;
+        border-radius: 13px;
+        background: #20b89a;
+        color: #fff;
+        font-size: 14px;
+        box-shadow: 0 5px 14px rgba(32, 184, 154, .28);
+        transition: transform .2s ease, background .2s ease;
+      }
+      .sticky a:hover { transform: translateY(-2px); background: #72d2bd; }
+      @media (max-width: 360px) {
+        .sticky { padding-left: 13px; }
+        .sticky > div { padding-left: 25px; }
+        .sticky strong { font-size: 13px; }
+        .sticky a { padding-inline: 14px; font-size: 13px; }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <section class="banner" id="home">
+        <img
+          class="hero-banner-image"
+          src="images/banner.avif"
+          alt="DentalCare Ayurvedic banner"
+        />
+      </section>
+      <section id="mens-concerns" class="">
+        <div class="section-head">
+          <div class="kicker">Problems</div>
+          <h2>दाँतों की समस्या के साथ होने वाली परेशानियाँ</h2>
+        </div>
+        <div class="men-flow">
+          <!-- Replace each image src below with your own image path. -->
+          <article class="men-step">
+            <div class="men-image">
+              <img
+                src="images/problem1.avif"
+                alt="दाँतों में दर्द और झनझनाहट"
+                width="320"
+                height="340"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <span class="men-marker" aria-hidden="true">01</span>
+            <div class="men-caption"><h3>दाँतों में दर्द और झनझनाहट</h3></div>
+          </article>
+          <article class="men-step">
+            <div class="men-image">
+              <img
+                src="images/problem2.avif"
+                alt="ठंडा-गरम लगना"
+                width="320"
+                height="340"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <span class="men-marker" aria-hidden="true">02</span>
+            <div class="men-caption"><h3>ठंडा-गरम लगना</h3></div>
+          </article>
+          <article class="men-step">
+            <div class="men-image">
+              <img
+                src="images/problem3.avif"
+                alt="दाँतों में कीड़ा और सड़न"
+                width="320"
+                height="340"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <span class="men-marker" aria-hidden="true">03</span>
+            <div class="men-caption">
+              <h3>दाँतों में कीड़ा और सड़न</h3>
+            </div>
+          </article>
+          <article class="men-step">
+            <div class="men-image">
+              <img
+                src="images/problem4.avif"
+                alt="मसूड़ों में सूजन या खून आना"
+                width="320"
+                height="340"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <span class="men-marker" aria-hidden="true">04</span>
+            <div class="men-caption"><h3>मसूड़ों में सूजन या खून आना</h3></div>
+          </article>
+          <article class="men-step">
+            <div class="men-image">
+              <img
+                src="images/problem5.avif"
+                alt="खाना चबाने में परेशानी"
+                width="320"
+                height="340"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <span class="men-marker" aria-hidden="true">05</span>
+            <div class="men-caption"><h3>खाना चबाने में परेशानी</h3></div>
+          </article>
+        </div>
+      </section>
+      <section id="product" class="">
+        <div class="section-head">
+          <h2>Dental Care Capsule</h2>
+        </div>
+        <div class="product-panel">
+          <figure class="product-showcase">
+            <span class="showcase-orbit-icon"><i class="fa-solid fa-leaf" aria-hidden="true"></i></span>
+            <span class="showcase-badge">100% आयुर्वेदिक</span>
+            <span class="showcase-callout showcase-callout-left">
+              <i class="fa-solid fa-tooth" aria-hidden="true"></i>
+              <b>दाँतों की सफाई</b>
+            </span>
+            <span class="showcase-callout showcase-callout-right">
+              <i class="fa-solid fa-shield-heart" aria-hidden="true"></i>
+              <b>मुँह की स्वच्छता</b>
+            </span>
+            <img
+              class="product-photo"
+              src="images/product.avif"
+              onerror="this.onerror=null;this.src='images/product.avif';"
+              alt="Dental Care Capsule"
+              width="480"
+              height="360"
+              loading="lazy"
+              decoding="async"
+            />
+          </figure>
+          <p class="product-description">
+            DentalCare Capsule दाँतों और मुँह की देखभाल के लिए।
+          </p>
+          <div class="formula-cards">
+            <article class="formula-card">
+              <span class="formula-icon"><i class="fa-solid fa-tooth" aria-hidden="true"></i></span>
+              <div class="formula-text">
+                <h3>दाँतों की सफाई में सहायक</h3>
+              </div>
+              <span class="formula-step">01</span>
+            </article>
+            <article class="formula-card">
+              <span class="formula-icon"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></span>
+              <div class="formula-text">
+                <h3>मुँह की स्वच्छता बनाए रखने के लिए</h3>
+              </div>
+              <span class="formula-step">02</span>
+            </article>
+            <article class="formula-card">
+              <span class="formula-icon"><i class="fa-solid fa-circle-check" aria-hidden="true"></i></span>
+              <div class="formula-text">
+                <h3>आसान दैनिक उपयोग</h3>
+              </div>
+              <span class="formula-step">03</span>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section id="how-it-works" class="">
+        <div class="section-head">
+          <div class="kicker">How It Works</div>
+          <h2>दाँतों की देखभाल की सही दिनचर्या</h2>
+        </div>
+        <div class="how-flow">
+          <article class="how-step">
+            <div class="how-symbol"><img src="images/work1.avif" alt="Daily oral hygiene" loading="lazy" decoding="async" /></div>
+            <div class="how-copy">
+              <h3>Daily Oral Hygiene</h3>
+              <p>नियमित ब्रशिंग और दाँतों के बीच की सफाई खाने के कणों और दाँतों पर जमी मैल को हटाने में मदद करती है।</p>
+            </div>
+          </article>
+          <article class="how-step">
+            <div class="how-symbol"><img src="images/work2.avif" alt="Sensitivity care" loading="lazy" decoding="async" /></div>
+            <div class="how-copy">
+              <h3>Sensitivity Care</h3>
+              <p>ठंडा-गरम खाने पर होने वाली दाँतों की झनझनाहट को कम करने में सहायता करता है</p>
+            </div>
+          </article>
+          <article class="how-step">
+            <div class="how-symbol"><img src="images/work3.avif" alt="Gum care" loading="lazy" decoding="async" /></div>
+            <div class="how-copy">
+              <h3>Gum Care</h3>
+              <p>मसूड़ों की सूजन और खून आने की समस्या में मसूड़ों की उचित देखभाल में सहायक।</p>
+            </div>
+          </article>
+          <article class="how-step">
+            <div class="how-symbol"><img src="images/work4.avif" alt="Regular dental care" loading="lazy" decoding="async" /></div>
+            <div class="how-copy">
+              <h3>Regular Dental Care</h3>
+              <p>दाँतों और मसूड़ों को स्वस्थ रखने तथा मुँह की स्वच्छता बनाए रखने में सहायता करता है।</p>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section id="women-support" class="">
+        <div class="section-head">
+          <div class="kicker">WOMEN’S WELLNESS</div>
+          <h2>महिलाओं के लिए कैसे काम करता है?</h2>
+        </div>
+        <div class="how-flow">
+          <article class="how-step">
+            <div class="how-symbol">
+              <img
+                src="images/femalework1.avif"
+                alt="Menstrual cycle का चित्रण"
+                width="980"
+                height="980"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="how-copy">
+              <h3>पीरियड का चक्र नियमित</h3>
+              <p>मासिक चक्र को नियमित और अधिक सहज बनाए रखने में मदद करता है।</p>
+            </div>
+          </article>
+          <article class="how-step">
+            <div class="how-symbol">
+              <img
+                src="images/femalework2.avif"
+                alt="महिलाओं की wellness से जुड़ी तस्वीर"
+                width="1600"
+                height="1066"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="how-copy">
+              <h3>हॉर्मोन संतुलन</h3>
+              <p>
+                एस्ट्रोजन और प्रोजेस्टेरोन के संतुलन को बनाए रखने में सहायक।
+              </p>
+            </div>
+          </article>
+          <article class="how-step">
+            <div class="how-symbol">
+              <img
+                src="images/femalework3.avif"
+                alt="Ovulation का चित्रण"
+                width="1200"
+                height="789"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="how-copy">
+              <h3>ओव्यूलेशन में सुधार</h3>
+              <p>नियमित ओव्यूलेशन और प्रजनन स्वास्थ्य का समर्थन</p>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section id="guidance" class="">
+        <div class="section-head">
+          <div class="kicker">A THOUGHTFUL APPROACH</div>
+          <h2>डॉक्टर क्यों सलाह देते हैं?</h2>
+        </div>
+        <figure class="doctor-profile">
+          <div class="doctor-photo-frame">
+            <!-- Replace src with your doctor-with-product photo, e.g. images/doctor-product.avif. -->
+            <img
+              class="doctor-photo"
+              src="images/doctor.avif"
+              alt="डॉक्टर और product की तस्वीर के लिए placeholder"
+              width="640"
+              height="480"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+          <figcaption class="doctor-bio">
+            <!-- Replace the placeholders with the doctor's actual name and introduction. -->
+            <div class="doctor-name-row">
+              <span class="doctor-profile-icon"
+                ><i class="fa-solid fa-user-doctor" aria-hidden="true"></i
+              ></span>
+              <h3>डॉ. अनन्या शर्मा</h3>
+            </div>
+            <p class="doctor-introduction">
+              <strong>बी.ए.एम.एस. | आयुर्वेद विशेषज्ञ</strong><br />
+              DentalCare एक आयुर्वेदिक हर्बल फ़ॉर्मूला है, जो प्रजनन स्वास्थ्य,
+              प्राकृतिक संतुलन और हार्मोन संतुलन को सहारा देने में मदद करता है।
+              संतुलित आहार, स्वस्थ जीवनशैली और नियमित सेवन के साथ इसे दैनिक
+              स्वास्थ्य दिनचर्या में शामिल किया जा सकता है।
+            </p>
+          </figcaption>
+        </figure>
+        <div class="cards guidance">
+          <article class="card">
+            <div class="card-icon">
+              <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+            </div>
+            <h3>मूल कारण पर ध्यान</h3>
+            <p>
+              सिर्फ लक्षणों पर नहीं, fertility से जुड़ी समस्या के संभावित कारणों
+              को समझने पर ध्यान दिया जाता है।
+            </p>
+          </article>
+          <article class="card">
+            <div class="card-icon">
+              <i class="fa-solid fa-sliders" aria-hidden="true"></i>
+            </div>
+            <h3>हॉर्मोन संतुलन</h3>
+            <p>
+              शरीर के hormonal balance को प्राकृतिक तरीके से support करने में
+              मदद करता है।
+            </p>
+          </article>
+          <article class="card">
+            <div class="card-icon">
+              <i class="fa-solid fa-calendar-check" aria-hidden="true"></i>
+            </div>
+            <h3>सुरक्षित और प्रभावी</h3>
+            <p>दैनिक wellness routine में आसानी से शामिल किया जा सकता है।</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">
+              <i class="fa-solid fa-heart-pulse" aria-hidden="true"></i>
+            </div>
+            <h3>Complete Health Support</h3>
+            <p>
+              सिर्फ fertility wellness ही नहीं, बल्कि overall health और wellness
+              को भी support करता है।
+            </p>
+          </article>
+        </div>
+      </section>
+      <section id="ingredients" aria-labelledby="ingredients-heading">
+        <div class="section-head">
+          <div class="kicker">ROOTED IN AYURVEDA</div>
+          <h2 id="ingredients-heading">प्रमुख Ayurvedic Ingredients</h2>
+        </div>
+        <div class="herbs">
+          <article class="herb">
+            <div class="herb-visual" aria-hidden="true">
+              <span>BOTANICAL 01</span
+              ><img
+                src="images/ing1.avif"
+                alt="अश्वगंधा herb"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="herb-content">
+              <h3>अश्वगंधा</h3>
+            </div>
+          </article>
+          <article class="herb">
+            <div class="herb-visual" aria-hidden="true">
+              <span>BOTANICAL 02</span
+              ><img
+                src="images/ing2.avif"
+                alt="शतावरी herb"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="herb-content">
+              <h3>शतावरी</h3>
+            </div>
+          </article>
+          <article class="herb">
+            <div class="herb-visual" aria-hidden="true">
+              <span>BOTANICAL 03</span
+              ><img
+                src="images/ing3.avif"
+                alt="कौंच बीज herb"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="herb-content">
+              <h3>कौंच बीज</h3>
+            </div>
+          </article>
+          <article class="herb">
+            <div class="herb-visual" aria-hidden="true">
+              <span>BOTANICAL 04</span
+              ><img
+                src="images/ing4.avif"
+                alt="गोखरू herb"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="herb-content">
+              <h3>गोखरू</h3>
+            </div>
+          </article>
+          <article class="herb">
+            <div class="herb-visual" aria-hidden="true">
+              <span>BOTANICAL 05</span
+              ><img
+                src="images/ing5.avif"
+                alt="पुत्रजीवक बीज herb"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="herb-content">
+              <h3>पुत्रजीवक बीज</h3>
+            </div>
+          </article>
+          <article class="herb">
+            <div class="herb-visual" aria-hidden="true">
+              <span>BOTANICAL 06</span
+              ><img
+                src="images/ing6.avif"
+                alt="मुलेठी herb"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="herb-content">
+              <h3>मुलेठी</h3>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section id="quality" class="">
+        <div class="section-head">
+          <div class="kicker">QUALITY & TRUST</div>
+          <h2>प्रमाणित और भरोसेमंद</h2>
+        </div>
+        <div class="trust-grid">
+          <article class="trust-card">
+            <div class="trust-card-image">
+              <img
+                src="images/cert1.avif"
+                alt="GMP certification image"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="trust-card-body">
+              <h3>GMP प्रमाणित</h3>
+              <p>उत्पादन मानकों के अनुसार तैयार।</p>
+            </div>
+          </article>
+          <article class="trust-card">
+            <div class="trust-card-image">
+              <img
+                src="images/cert2.avif"
+                alt="ISO certification image"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="trust-card-body">
+              <h3>ISO प्रमाणित</h3>
+              <p>अंतरराष्ट्रीय quality standards का पालन।</p>
+            </div>
+          </article>
+          <article class="trust-card">
+            <div class="trust-card-image">
+              <img
+                src="images/cert3.avif"
+                alt="FSSAI certification image"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="trust-card-body">
+              <h3>FSSAI अनुमोदित</h3>
+              <p>खाद्य सुरक्षा मानकों के अनुसार।</p>
+            </div>
+          </article>
+          <article class="trust-card">
+            <div class="trust-card-image">
+              <img
+                src="images/cert4.avif"
+                alt="Ayurvedic herbs image"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="trust-card-body">
+              <h3>Ayurvedic Formula</h3>
+              <p>चुनी हुई प्राकृतिक Ayurvedic herbs से तैयार।</p>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section id="order-form" class="">
+        <div class="section-head">
+          <div class="kicker">ORDER YOUR KIT</div>
+          <h2>अपना ऑर्डर बुक करें</h2>
+        </div>
+        <p>केवल 2 मिनट में order पूरा करें।</p>
+        <div class="form-card">
+          <div class="order-summary">
+            <span class="order-summary-icon"
+              ><i class="fa-solid fa-box-open" aria-hidden="true"></i
+            ></span>
+            <div class="order-summary-name">
+              <strong>DentalCare Ayurvedic Kit</strong
+              ><small>Free Delivery · COD Available</small>
+            </div>
+          </div>
+          <form id="orderForm" onsubmit="return submitForm(event);">
+            <h3 class="order-fields-heading">
+              <i class="fa-solid fa-address-card" aria-hidden="true"></i>अपनी
+              जानकारी भरें
+            </h3>
+            <input type="hidden" name="key" value="XQP4bdtEZkt3" />
+            <input type="hidden" name="date" id="date" />
+            <input type="hidden" name="utm_source" /><input
+              type="hidden"
+              name="utm_medium"
+            /><input type="hidden" name="utm_campaign" />
+            <input type="hidden" name="utm_campaign_id" /><input
+              type="hidden"
+              name="utm_adset"
+            /><input type="hidden" name="utm_adset_id" />
+            <input type="hidden" name="utm_ad" /><input
+              type="hidden"
+              name="utm_ad_id"
+            /><input type="hidden" name="utm_placement" />
+            <input type="hidden" name="event_id" id="event_id" /><input
+              type="hidden"
+              name="fbclid"
+            /><input type="hidden" name="fbc" /><input
+              type="hidden"
+              name="fbp"
+            />
+            <div class="field">
+              <label for="name"
+                ><i class="fa-regular fa-user" aria-hidden="true"></i>आपका नाम
+                *</label
+              ><input
+                type="text"
+                id="name"
+                name="name"
+                required
+                autocomplete="name"
+                pattern="[A-Za-z\u0900-\u097F ]+"
+                placeholder="अपना पूरा नाम दर्ज करें"
+              />
+              <div class="err" id="nameError">कृपया पूरा नाम दर्ज करें।</div>
+            </div>
+            <div class="field">
+              <label for="phone"
+                ><i
+                  class="fa-solid fa-mobile-screen-button"
+                  aria-hidden="true"
+                ></i
+                >मोबाइल नंबर *</label
+              ><input
+                type="tel"
+                id="phone"
+                name="phone"
+                maxlength="10"
+                inputmode="numeric"
+                autocomplete="tel"
+                pattern="[6-9][0-9]{9}"
+                required
+                placeholder="10 Digit Mobile Number"
+              />
+              <div class="err" id="phoneError">
+                कृपया सही 10 अंकों का नंबर दर्ज करें।
+              </div>
+            </div>
+            <div class="field">
+              <label for="address"
+                ><i class="fa-solid fa-location-dot" aria-hidden="true"></i>पूरा
+                पता *</label
+              ><input
+                id="address"
+                name="address"
+                autocomplete="street-address"
+                placeholder="मकान नंबर, गली, शहर और राज्य"
+                required
+                minlength="10"
+              />
+            </div>
+            <div class="field">
+              <label for="pincode"
+                ><i class="fa-solid fa-map-pin" aria-hidden="true"></i>पिनकोड
+                *</label
+              ><input
+                id="pincode"
+                name="pincode"
+                autocomplete="postal-code"
+                inputmode="numeric"
+                pattern="[1-9][0-9]{5}"
+                maxlength="6"
+                placeholder="6 अंकों का पिनकोड"
+                required
+              />
+            </div>
+            <button class="submit" id="submitBtn" type="submit">
+              Confirm Your Order
+              <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </button>
+            <div class="secure">
+              <i class="fa-solid fa-lock" aria-hidden="true"></i>Your
+              information is secure<br /><strong
+                >COD Available | Free Delivery</strong
+              >
+            </div>
+          </form>
+          <div class="order-status" id="order-status" role="status"></div>
+        </div>
+        <h3 class="benefits-title">Order Benefits</h3>
+        <div class="order-benefit-grid">
+          <div class="order-benefit">
+            <i class="fa-solid fa-truck-fast" aria-hidden="true"></i
+            ><span>Free Delivery</span>
+          </div>
+          <div class="order-benefit">
+            <i class="fa-solid fa-wallet" aria-hidden="true"></i
+            ><span>COD Available</span>
+          </div>
+          <div class="order-benefit">
+            <i class="fa-solid fa-box" aria-hidden="true"></i
+            ><span>Genuine Product</span>
+          </div>
+        </div>
+      </section>
+      <section id="experiences" class="">
+        <div class="section-head">
+          <div class="kicker">CUSTOMER EXPERIENCES</div>
+          <h2>लोगों ने अपने अनुभव साझा किए</h2>
+        </div>
+        <div class="stories">
+          <article class="story">
+            <div class="story-head">
+              <!-- Add the customer photo at images/customer-1.avif. -->
+              <div class="story-photo">
+                <span aria-hidden="true">ने</span
+                ><img
+                  src="images/test1.avif"
+                  alt="नेहा शर्मा"
+                  loading="lazy"
+                  onerror="this.style.display = 'none'"
+                />
+              </div>
+              <div class="story-person">
+                <h3>अनन्या वर्मा</h3>
+                <small>भोपाल · 31 वर्ष</small>
+              </div>
+            </div>
+            <div class="story-quote" aria-hidden="true"><span>“</span></div>
+            <p>
+              “पहले मेरे दाँतों में दर्द और झनझनाहट की समस्या रहती थी, जिससे खाने-पीने में भी परेशानी होती थी। Dental Care का इस्तेमाल करने के बाद मुझे काफी राहत महसूस हुई और अब दाँतों की देखभाल करना आसान हो गया है।”
+            </p>
+          </article>
+          <article class="story">
+            <div class="story-head">
+              <!-- Add the customer photo at images/customer-2.avif. -->
+              <div class="story-photo">
+                <span aria-hidden="true">अ</span
+                ><img
+                  src="images/test2.avif"
+                  alt="अमित वर्मा"
+                  loading="lazy"
+                  onerror="this.style.display = 'none'"
+                />
+              </div>
+              <div class="story-person">
+                <h3>आरव कुमार</h3>
+                <small>जैसलमेर · 35 वर्ष</small>
+              </div>
+            </div>
+            <div class="story-quote" aria-hidden="true"><span>“</span></div>
+            <p>
+              “पहले मेरे दाँतों में काफी परेशानी रहती थी और ठंडा-गरम खाने पर झनझनाहट महसूस होती थी। Dental Care का इस्तेमाल करने के बाद मुझे आराम महसूस हुआ और अब पहले से बेहतर महसूस होता है।”
+            </p>
+          </article>
+          <article class="story">
+            <div class="story-head">
+              <!-- Add the customer photo at images/customer-3.avif. -->
+              <div class="story-photo">
+                <span aria-hidden="true">का</span
+                ><img
+                  src="images/test3.avif"
+                  alt="काव्या मेहता"
+                  loading="lazy"
+                  onerror="this.style.display = 'none'"
+                />
+              </div>
+              <div class="story-person">
+                <h3>माहिरा चौहान</h3>
+                <small>उदयपुर · 38 वर्ष</small>
+              </div>
+            </div>
+            <div class="story-quote" aria-hidden="true"><span>“</span></div>
+            <p>
+              “पहले मेरे मसूड़ों में सूजन और दर्द की समस्या रहती थी, जिससे काफी परेशानी होती थी। Dental Care का 25 दिनों तक इस्तेमाल करने के बाद मुझे काफी आराम महसूस हुआ। अब मसूड़ों की देखभाल करना पहले से आसान लगने लगा है।”
+            </p>
+          </article>
+        </div>
+      </section>
+      <section id="faq" class="">
+        <div class="section-head">
+          <div class="kicker">HERE TO HELP</div>
+          <h2>आपके सवाल, हमारे जवाब</h2>
+        </div>
+        <div class="faq-list">
+          <div class="faq">
+            <button
+              type="button"
+              aria-expanded="false"
+              aria-controls="answer-1"
+            >
+              परिणाम कितने समय में दिखाई दे सकते हैं?<span aria-hidden="true"
+                >+</span
+              >
+            </button>
+            <div class="answer" id="answer-1">
+              Dental Care के नियमित उपयोग से 25–30 दिनों में बदलाव महसूस हो सकता है।
+            </div>
+          </div>
+          <div class="faq">
+            <button
+              type="button"
+              aria-expanded="false"
+              aria-controls="answer-2"
+            >
+              क्या इसके side effects होते हैं?<span aria-hidden="true">+</span>
+            </button>
+            <div class="answer" id="answer-2">
+              नहीं, यह प्राकृतिक आयुर्वेदिक सामग्री से तैयार किया गया उत्पाद है।
+              इसमें उपयोग किए गए घटकों की गुणवत्ता और शुद्धता की जाँच की जाती
+              है। इसका निर्माण GMP और ISO मानकों का पालन करने वाली सुविधा में
+              किया जाता है।
+            </div>
+          </div>
+          <div class="faq">
+            <button
+              type="button"
+              aria-expanded="false"
+              aria-controls="answer-3"
+            >
+              Dental Care क्या है?<span
+                aria-hidden="true"
+                >+</span
+              >
+            </button>
+            <div class="answer" id="answer-3">
+              Dental Care दाँतों और मसूड़ों की नियमित देखभाल तथा मुँह की स्वच्छता बनाए रखने के लिए बनाया गया प्रोडक्ट है।
+            </div>
+          </div>
+          <div class="faq">
+            <button
+              type="button"
+              aria-expanded="false"
+              aria-controls="answer-5"
+            >
+              क्या Dental Care मसूड़ों की सूजन में सहायक है?<span aria-hidden="true">+</span>
+            </button>
+            <div class="answer" id="answer-5">
+             हाँ, Dental Care मसूड़ों की सूजन में सहायक है
+            </div>
+          </div>
+          <div class="faq">
+            <button
+              type="button"
+              aria-expanded="false"
+              aria-controls="answer-6"
+            >
+              Payment कैसे करें?<span aria-hidden="true">+</span>
+            </button>
+            <div class="answer" id="answer-6">
+              Cash on Delivery और उपलब्ध online payment options से payment किया
+              जा सकता है।
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="disclaimer" id="disclaimer">
+        <h2><span aria-hidden="true">⚠️</span> महत्वपूर्ण नोट</h2>
+        <p>
+          Dental Care एक आयुर्वेदिक उत्पाद है। इसके परिणाम व्यक्ति की स्थिति और उपयोग के तरीके के अनुसार अलग-अलग हो सकते हैं। यह उत्पाद दाँतों और मसूड़ों की समस्याओं के लिए पेशेवर डेंटल ट्रीटमेंट का विकल्प नहीं है। दाँतों में दर्द, मसूड़ों में सूजन या किसी अन्य समस्या के लिए डेंटिस्ट से सलाह लें। उत्पाद का उपयोग करने से पहले पैक पर दिए गए निर्देशों को ध्यानपूर्वक पढ़ें।
+        </p>
+      </section>
+      <footer>
+        <div class="policy-links">
+          <button type="button" onclick="openModal('privacy')">
+            Privacy Policy</button
+          ><button type="button" onclick="openModal('terms')">
+            Terms & Conditions</button
+          ><button type="button" onclick="openModal('shipping')">
+            Shipping Policy</button
+          ><button type="button" onclick="openModal('cancel')">
+            Cancellation Policy</button
+          ><button type="button" onclick="openModal('disclaimer')">
+            Legal Disclaimer
+          </button>
+        </div>
+      </footer>
+      <div class="sticky" id="order-sticky">
+        <div><strong>Free Delivery</strong><small>COD Available</small></div>
+        <a href="#order-form">अभी ऑर्डर करें</a>
+      </div>
+      <div class="loading" id="loading">
+        <div class="loading-box">
+          <div class="spinner"></div>
+          <p>आपकी request भेजी जा रही है...</p>
+        </div>
+      </div>
+    </main>
+
+    <div class="pp-overlay" id="pp-overlay" onclick="closeIfOutside(event)">
+      <div class="pp-modal" id="pp-modal">
+        <button class="pp-close" onclick="closeModal()" aria-label="Close">
+          ×
+        </button>
+        <div id="pp-content"></div>
+      </div>
+    </div>
+
+    <script>
+      // Animate compact cards once on arrival, without hiding content by default.
+      if (
+        "IntersectionObserver" in window &&
+        !window.matchMedia("(prefers-reduced-motion: reduce)").matches
+      ) {
+        const compactHowObserver = new IntersectionObserver(
+          (entries, observer) => {
+            entries.forEach((entry) => {
+              if (!entry.isIntersecting) return;
+              entry.target.classList.add("has-entered");
+              observer.unobserve(entry.target);
+            });
+          },
+          { threshold: 0.2 },
+        );
+        document
+          .querySelectorAll("#how-it-works .how-step, #women-support .how-step")
+          .forEach((card) => compactHowObserver.observe(card));
+      }
+      const $ = (s) => document.querySelector(s),
+        $$ = (s) => [...document.querySelectorAll(s)];
+
+      // Sticky order bar: hidden on the banner, visible from Problem onward, hidden on the order form.
+      const stickyOrder = $("#order-sticky");
+      const bannerSection = $(".banner");
+      const problemSection = bannerSection?.nextElementSibling || null;
+      const orderFormSection = $("#order-form");
+      let stickyFrame = 0;
+
+      function isInViewport(element) {
+        if (!element) return false;
+        const rect = element.getBoundingClientRect();
+        return rect.top < window.innerHeight && rect.bottom > 0;
+      }
+
+      function updateStickyOrder() {
+        stickyFrame = 0;
+        if (!stickyOrder) return;
+
+        const problemStarted =
+          problemSection &&
+          problemSection.getBoundingClientRect().top < window.innerHeight;
+        const hideOnBanner = isInViewport(bannerSection) && !problemStarted;
+        const hideOnOrderForm = isInViewport(orderFormSection);
+
+        stickyOrder.classList.toggle(
+          "show",
+          !(hideOnBanner || hideOnOrderForm),
+        );
+      }
+
+      function scheduleStickyUpdate() {
+        if (!stickyFrame)
+          stickyFrame = requestAnimationFrame(updateStickyOrder);
+      }
+
+      window.addEventListener("scroll", scheduleStickyUpdate, {
+        passive: true,
+      });
+      window.addEventListener("resize", scheduleStickyUpdate);
+      updateStickyOrder();
+      $$(".faq button").forEach((b) =>
+        b.addEventListener("click", () => {
+          const f = b.parentElement;
+          f.classList.toggle("open");
+          b.setAttribute("aria-expanded", String(f.classList.contains("open")));
+          b.querySelector("span").textContent = f.classList.contains("open")
+            ? "−"
+            : "+";
+        }),
+      );
+
+      const UTM_KEYS = [
+        "utm_source",
+        "utm_medium",
+        "utm_campaign",
+        "utm_campaign_id",
+        "utm_adset",
+        "utm_adset_id",
+        "utm_ad",
+        "utm_ad_id",
+        "utm_placement",
+      ];
+      function setHidden(n, v) {
+        const i = document.querySelector('#orderForm input[name="' + n + '"]');
+        if (i) i.value = v || "";
+      }
+      function cookie(n) {
+        const m = document.cookie.match(
+          new RegExp("(?:^|;\\s*)" + n + "=([^;]*)"),
+        );
+        return m ? decodeURIComponent(m[1]) : "";
+      }
+      function capture() {
+        const p = new URLSearchParams(location.search);
+        UTM_KEYS.forEach((k) =>
+          setHidden(k, p.get(k) || sessionStorage.getItem(k) || ""),
+        );
+        UTM_KEYS.forEach((k) => {
+          if (p.get(k))
+            try {
+              sessionStorage.setItem(k, p.get(k));
+            } catch (_) {
+              /* storage may be unavailable */
+            }
+        });
+        const fbclid = p.get("fbclid") || "";
+        setHidden("fbclid", fbclid);
+        setHidden(
+          "fbc",
+          cookie("_fbc") || (fbclid ? "fb.1." + Date.now() + "." + fbclid : ""),
+        );
+        setHidden("fbp", cookie("_fbp"));
+      }
+      capture();
+
+      // Order form: allow only letters/spaces in name and valid Indian mobile digits.
+      const nameInput = $("#name");
+      const phoneInput = $("#phone");
+
+      nameInput?.addEventListener("input", () => {
+        nameInput.value = nameInput.value
+          .replace(/[^A-Za-z\u0900-\u097F ]/g, "")
+          .replace(/\s{2,}/g, " ")
+          .replace(/^\s+/, "");
+        err("nameError", false);
+      });
+
+      phoneInput?.addEventListener("input", () => {
+        let value = phoneInput.value.replace(/\D/g, "").slice(0, 10);
+        if (value && !/^[6-9]/.test(value)) value = value.slice(1);
+        phoneInput.value = value;
+        err("phoneError", false);
+      });
+
+      function validName(v) {
+        return /^[A-Za-z\u0900-\u097F]+(?: [A-Za-z\u0900-\u097F]+)+$/.test(
+          v.trim(),
+        );
+      }
+      function validPhone(v) {
+        return /^[6-9][0-9]{9}$/.test(v);
+      }
+      function err(id, on) {
+        document.getElementById(id)?.classList.toggle("show", on);
+      }
+      function eventId() {
+        return globalThis.crypto?.randomUUID
+          ? globalThis.crypto.randomUUID()
+          : "evt-" + Date.now() + "-" + Math.random().toString(16).slice(2);
+      }
+      function submitForm(e) {
+        e.preventDefault();
+        const n = $("#name").value.trim(),
+          p = $("#phone").value.trim();
+        const nameOk = validName(n);
+        const phoneOk = validPhone(p);
+        err("nameError", !nameOk);
+        err("phoneError", !phoneOk);
+        if (!nameOk || !phoneOk || !e.target.reportValidity()) return false;
+        capture();
+        $("#date").value = new Intl.DateTimeFormat("en-IN", {
+          timeZone: "Asia/Kolkata",
+          year: "numeric",
+          month: "2-digit",
+          day: "2-digit",
+          hour: "2-digit",
+          minute: "2-digit",
+          second: "2-digit",
+          hour12: false,
+        }).format(new Date());
+        $("#event_id").value = eventId();
+        const loading = $("#loading");
+        loading.classList.add("show");
+        const form = e.target,
+          formData = new FormData(form);
+        if (typeof fbq === "function")
+          fbq(
+            "track",
+            "Lead",
+            { content_name: "DentalCare" },
+            { eventID: $("#event_id").value },
+          );
+        const endpoint = "https://script.google.com/macros/s//exec";
+        if (!endpoint || endpoint.endsWith("/macros/s//exec")) {
+          setTimeout(() => {
+            loading.classList.remove("show");
+            $("#order-status").textContent =
+              "ऑनलाइन ऑर्डर अभी उपलब्ध नहीं है। कृपया कुछ समय बाद फिर कोशिश करें।";
+          }, 350);
+          return false;
+        }
+        fetch(endpoint, { method: "POST", body: formData })
+          .then((r) => {
+            if (!r.ok) throw new Error("Submission failed");
+            form.reset();
+            location.href = "./Thankyou.html";
+          })
+          .catch(() => {
+            loading.classList.remove("show");
+            alert(
+              "नेटवर्क समस्या के कारण request भेजी नहीं जा सकी। कृपया फिर कोशिश करें।",
+            );
+          });
+        return false;
+      }
+
+      const contents = {
+        privacy: `<div class="pp-mtitle"><i class="ti ti-shield-lock" aria-hidden="true"></i>Privacy Policy</div><div class="pp-mbadge">Last updated: June 2025</div><p class="pp-mpara">DentalCare आपकी personal information की सुरक्षा को सर्वोच्च प्राथमिकता देता है। जब आप order करते हैं तो हम निम्नलिखित जानकारी एकत्र करते हैं:</p><ul class="pp-mlist"><li>नाम, मोबाइल नंबर और delivery address</li><li>Payment details (encrypted और secure)</li><li>Order history और purchase records</li></ul><div class="pp-mhl">आपकी जानकारी किसी third-party को नहीं बेची जाती। इसका उपयोग केवल order processing और delivery के लिए किया जाता है।</div><p class="pp-mpara">हम industry-standard SSL encryption का उपयोग करते हैं। किसी भी privacy concern के लिए हमसे contact करें।</p>`,
+        terms: `<div class="pp-mtitle"><i class="ti ti-file-description" aria-hidden="true"></i>Terms & Conditions</div><div class="pp-mbadge">Please read carefully</div><p class="pp-mpara">DentalCare का उपयोग करके आप इन terms से सहमत होते हैं:</p><ul class="pp-mlist"><li>Product results व्यक्ति-दर-व्यक्ति अलग हो सकते हैं</li><li>यह product किसी बीमारी का इलाज नहीं है — wellness supplement है</li><li>18 वर्ष से कम आयु के व्यक्ति बिना guardian consent के order न करें</li><li>Fake/fraudulent orders के लिए legal action लिया जा सकता है</li><li>Product images केवल representation के लिए हैं</li></ul><div class="pp-mhl">DentalCare किसी भी समय बिना prior notice के prices, offers या terms बदलने का अधिकार रखता है।</div>`,
+        shipping: `<div class="pp-mtitle"><i class="ti ti-truck-delivery" aria-hidden="true"></i>Shipping Policy</div><div class="pp-mbadge">Free Delivery All India</div><p class="pp-mpara">हम पूरे India में FREE shipping प्रदान करते हैं। Delivery timeline:</p><ul class="pp-mlist"><li>Metro cities (Delhi, Mumbai, Bengaluru): 3–5 business days</li><li>Tier-2 / Tier-3 cities: 5–7 business days</li><li>Remote / rural areas: 7–10 business days</li></ul><div class="pp-mhl">Order confirm होने के 24–48 घंटे के अंदर tracking number SMS/WhatsApp पर भेजा जाएगा।</div><ul class="pp-mlist"><li>Delivery attempt 3 बार की जाएगी — उसके बाद order वापस आ जाएगा</li><li>Incorrect address की जिम्मेदारी customer की होगी</li></ul>`,
+        cancel: `<div class="pp-mtitle"><i class="ti ti-refresh" aria-hidden="true"></i>Cancellation Policy</div><div class="pp-mbadge">7-Day Easy Return</div><p class="pp-mpara">आप order confirm होने के <strong>24 घंटे के अंदर</strong> cancellation request कर सकते हैं।</p><ul class="pp-mlist"><li>Order dispatch होने के बाद cancellation संभव नहीं</li><li>Damaged या wrong product मिलने पर 7 दिन के अंदर complaint करें</li><li>Opened/used products return नहीं किए जाएंगे</li><li>Refund 5–7 business days में original payment method पर</li></ul><div class="pp-mhl">Return के लिए product original packaging में होना ज़रूरी है। Unboxing video होने पर claim जल्दी process होता है।</div>`,
+        contact: `<div class="pp-mtitle"><i class="ti ti-headset" aria-hidden="true"></i>Contact Us</div><p class="pp-mpara">हमारी team आपकी मदद के लिए Available है — सोमवार से शनिवार, सुबह 9 बजे से शाम 6 बजे तक।</p><div class="pp-cgrid"><div class="pp-citem"><i class="ti ti-phone" aria-hidden="true"></i><div class="pp-clbl">Call / WhatsApp</div><div class="pp-cval">+91 8860606078</div></div><div class="pp-citem"><i class="ti ti-mail" aria-hidden="true"></i><div class="pp-clbl">Email</div><div class="pp-cval">support@ssherbalindia.com</div></div><div class="pp-citem"><i class="ti ti-clock" aria-hidden="true"></i><div class="pp-clbl">Support Hours</div><div class="pp-cval">Mon–Sat 9am–6pm</div></div><div class="pp-citem"><i class="ti ti-message-circle" aria-hidden="true"></i><div class="pp-clbl">Response Time</div><div class="pp-cval">Within 24 hours</div></div></div>`,
+        disclaimer: `<div class="pp-mtitle"><i class="ti ti-alert-circle" aria-hidden="true"></i>Legal Disclaimer</div><div class="pp-mbadge">Important Notice</div><p class="pp-mpara">DentalCare एक natural wellness supplement है। इस product के बारे में निम्नलिखित बातें ध्यान में रखें:</p><ul class="pp-mlist"><li>यह product किसी भी बीमारी का diagnosis, treatment, cure या prevention नहीं करता</li><li>Results individual to individual अलग हो सकते हैं</li><li>यह product FSSAI guidelines के अनुसार एक food supplement है, drug नहीं</li><li>किसी भी medical condition में उपयोग से पहले doctor से परामर्श करें</li><li>Pregnant, nursing women या किसी chronic illness वाले व्यक्ति पहले physician से consult करें</li></ul><div class="pp-mhl">Website पर दिए गए statements को Food & Drug Administration द्वारा evaluate नहीं किया गया है। यह product किसी disease को diagnose, treat, cure या prevent करने के लिए नहीं है।</div><p class="pp-mpara">Product की images, descriptions और testimonials केवल illustrative purpose के लिए हैं। DentalCare किसी भी indirect या consequential loss के लिए उत्तरदायी नहीं है।</p>`,
+      };
+      // Policy modal does not modify body/html positioning or overflow.
+      // The fixed overlay itself blocks background interaction, so the page never reflows or shakes.
+      function openModal(k) {
+        if (!contents[k]) return;
+        $("#pp-content").innerHTML = contents[k];
+        $("#pp-overlay").classList.add("show");
+        $("#pp-modal").scrollTo(0, 0);
+      }
+      function closeModal() {
+        if (!$("#pp-overlay").classList.contains("show")) return;
+        $("#pp-overlay").classList.remove("show");
+      }
+      function closeIfOutside(e) {
+        if (e.target === $("#pp-overlay")) closeModal();
+      }
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") closeModal();
+      });
+      $("#pp-overlay").addEventListener(
+        "wheel",
+        (e) => {
+          if (!$("#pp-modal").contains(e.target)) e.preventDefault();
+        },
+        { passive: false },
+      );
+      $("#pp-overlay").addEventListener(
+        "touchmove",
+        (e) => {
+          if (!$("#pp-modal").contains(e.target)) e.preventDefault();
+        },
+        { passive: false },
+      );
+      window.openModal = openModal;
+      window.closeModal = closeModal;
+      window.closeIfOutside = closeIfOutside;
+    </script>
+  </body>
+</html>
