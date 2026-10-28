@@ -3774,12 +3774,14 @@
                 कृपया सही 10 अंकों का नंबर दर्ज करें।
               </div>
             </div>
-            <div class="field">
+            <!-- Address and pincode are intentionally not collected. -->
+            <div class="field" data-remove="address" hidden>
               <label for="address"
                 ><i class="fa-solid fa-location-dot" aria-hidden="true"></i>पूरा
                 पता *</label
               ><input
                 id="address"
+                disabled
                 name="address"
                 autocomplete="street-address"
                 placeholder="मकान नंबर, गली, शहर और राज्य"
@@ -3787,12 +3789,13 @@
                 minlength="10"
               />
             </div>
-            <div class="field">
+            <div class="field" data-remove="pincode" hidden>
               <label for="pincode"
                 ><i class="fa-solid fa-map-pin" aria-hidden="true"></i>पिनकोड
                 *</label
               ><input
                 id="pincode"
+                disabled
                 name="pincode"
                 autocomplete="postal-code"
                 inputmode="numeric"
@@ -4210,7 +4213,8 @@
             { content_name: "DentalCare" },
             { eventID: $("#event_id").value },
           );
-        const endpoint = "https://script.google.com/macros/s//exec";
+        const endpoint =
+          "https://script.google.com/macros/s/AKfycbyd4B_R8ZQjGjfudKLrjAuMFbkVQ_IlcKGdci7bcnWzU_Le6w84F8cGW4TARXnU07A6/exec";
         if (!endpoint || endpoint.endsWith("/macros/s//exec")) {
           setTimeout(() => {
             loading.classList.remove("show");
